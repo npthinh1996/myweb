@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>Build Website PT.9E | Cấu trúc &amp; Các lệnh trong CSS</title>
+	<meta name="keywords" content="HTML,CSS,XHTML,JavaScript" />
+    <meta name="author" content="PT.9E" />
+    <link href="image/home-icon.png" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="main_css.css" />
+</head>
+
+<body>
+	<h1 align="center">Cấu trúc &amp; Các lệnh trong CSS</h1>
+    <hr />
+    <a href="index.html" target="_blank">HTML</a>
+    <a href="text_css.2.html" target="_blank">CSS.2</a>
+    <hr />
+    <h2 align="left">1. Bộ chọn CSS:</h2>
+    <ul>
+    	<li><code><b>*</b></code>:&emsp;<i>Chọn tất cả các thành phần HTML</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	* {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <li><code><b>tag</b></code>:&emsp;<i>Chọn tất cả các thành phần cùng loại</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	tag {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul id="tag">
+        	<p>Đây là thành phần <code>&lt;<b>p</b>&gt;</code></p>
+            <p>Đây là thành phần <code>&lt;<b>p</b>&gt;</code></p>
+        </ul>
+        <li><code><b>tag01 tag02</b></code>:&emsp;<i>Chọn tất cả thành phần <code>&lt;<b>tag02</b>&gt;</code> bên trong thành phần <code>&lt;<b>tag01</b>&gt;</code></i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	tag01 tag02 {<br>
+                property: value;<br>
+                }
+          	</code>
+      	</ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<div id="tag-in">
+            	<p>Đây là thành phần <code>&lt;<b>p</b>&gt;</code> có thành phần bao ngoài là <code>&lt;<b>div</b>&gt;</code></p>
+            </div>
+            <p>Đây là thành phần <code>&lt;<b>p</b>&gt;</code> bên ngoài thành phần <code>&lt;<b>div</b>&gt;</code></p>
+        </ul>
+        <li><code><b>tag01</b>,<b>tag02</b></code>:&emsp;<i>Chọn tất cả thành phần <code>&lt;<b>tag01</b>&gt;</code> và <code>&lt;<b>tag02</b>&gt;</code></i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	tag01,tag02 {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<div id="tag-and-1">Đây là thành phần <code>&lt;<b>div</b>&gt;</code></div>
+            <p id="tag-and-2">Đây là thành phần <code>&lt;<b>p</b>&gt;</code></p>
+        </ul>
+        <li><code><b>tag01</b>+<b>tag02</b></code>:&emsp;<i>Chọn tất cả thành phần <code>&lt;<b>tag02</b>&gt;</code> được đặt kế và sau thành phần <code>&lt;<b>tag01</b>&gt;</code></i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	tag01+tag02 {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<p class="tag-after-c">Đây là thành phần <code>&lt;<b>p</b>&gt;</code> nằm trước thành phần <code>&lt;<b>div</b>&gt;</code></p>
+            <div id="tag-after">Đây là thành phần <code>&lt;<b>div</b>&gt;</code></div>
+            <p class="tag-after-c">Đây là thành phần <code>&lt;<b>p</b>&gt;</code> nằm kế và sau thành phần <code>&lt;<b>div</b>&gt;</code></p>
+            <p class="tag-after-c">Đây là thành phần <code>&lt;<b>p</b>&gt;</code> nằm sau thành phần <code>&lt;<b>div</b>&gt;</code></p>
+        </ul>
+        <li><code><b>tag01</b>&gt;<b>tag02</b></code>:&emsp;<i>Chọn tất cả thành phần <code>&lt;<b>tag02</b>&gt;</code> có thành phần cha là <code>&lt;<b>tag01</b>&gt;</code></i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	tag01&gt;tag02 {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<div id="tag-child">
+            	<p class="tag-child-c">Đây là thành phần <code>&lt;<b>p</b>&gt;</code> nằm trong thành phần <code>&lt;<b>div</b>&gt;</code></p>
+                <i class="tag-child-c">Đây là thành phần <code>&lt;<b>i</b>&gt;</code> nằm trong thành phần <code>&lt;<b>div</b>&gt;</code></i>
+            </div>
+        </ul>
+        <li><code><b>.class</b></code>:&emsp;<i>Chọn tất cả các thành phần có cùng tên <code><b>class</b></code></i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	tag.Tênclass {<br>
+                property: value;<br>
+                }
+            </code>
+            <br>
+            <b><i>hoặc</i></b><br>
+            <code>
+            	.Tênclass {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <li><code>#<b>id</b></code>:&emsp;<i>Chọn tất cả các thành phần có cùng tên <code><b>id</b></code></i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	tag#Tênid {<br>
+                property: value;<br>
+                }
+            </code>
+            <br>
+            <b><i>hoặc</i></b><br>
+            <code>
+            	#Tênid {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <li><code>:<b>active</b></code>:&emsp;<i>Chọn các liên kết được kích hoạt</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	a:active {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<a href="https://www.google.com.vn/" id="tag-active" target="_blank">Google</a>
+        </ul>
+        <li><code>:<b>after</b></code>:&emsp;<i>Thêm một nội dung ngay phía sau thành phần</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	tag:after {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<div id="tag-af">NPT</div>
+        </ul>
+        <li><code>:<b>before</b></code>:&emsp;<i>Thêm nội dung ngay phía trước thành phần</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	tag:before {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<div id="tag-be">: Nguyễn Phước Thịnh</div>
+        </ul>
+        <li><code>:<b>first-child</b></code>:&emsp;<i>Chọn thành phần đầu tiên của thành phần cha chứa nó</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	tagCha tag:first-child {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<div id="tag-st">
+            	<p>Đây là tag con đầu tiên của tag <code>&lt;<b>div</b>&gt;</code></p>
+                <p>Đây là tag con thứ hai của tag <code>&lt;<b>div</b>&gt;</code></p>
+            </div>
+        </ul>
+        <li><code>:<b>first-letter</b></code>:&emsp;<i>Chọn ký tự đầu tiên của một thành phần</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	tagCha tag:first-letter {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<div id="tag-le">
+            	<p>Đây là tag <code>&lt;<b>p</b>&gt;</code> nằm bên trong tag <code>&lt;<b>div</b>&gt;</code></p>
+                <p>Đây là tag <code>&lt;<b>p</b>&gt;</code> nằm bên trong tag <code>&lt;<b>div</b>&gt;</code></p>
+            </div>
+        </ul>
+        <li><code>:<b>first-line</b></code>:&emsp;<i>Chọn dòng đầu tiên của một thành phần</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	tagCha tag:first-line {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul id="tag-li">
+           	<p>Đây là nội dung dài<br>
+      	     và rất dài</p>
+        </ul>
+        <li><code>:<b>focus</b></code>:&emsp;<i>Thành phần sẽ focus khi được chọn</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+   			<code>
+            	tag:focus {<br>
+                property: value;<br>
+                }
+            </code>     
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<form action="#" name="focusForm">
+            	<input type="text" id="tag-fo" />
+            </form>
+        </ul>
+        <li><code>:<b>hover</b></code>:&emsp;<i>Chọn các liên kết được hover (di chuyển chuột lên thành phần)</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	a:hover {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<a href="https://www.google.com.vn/" id="tag-ho" target="_blank">Google</a>
+        </ul>
+        <li><code>:<b>lang</b>(Mã ngôn ngữ)</code>:&emsp;<i>Chọn thành phần với thuộc tính ngôn ngữ có giá trị bắt đầu với "Mã ngôn ngữ"</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	tag:lang(Mã ngôn ngữ) {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<a href="#" lang="vi" class="tag-la">Bách Khoa</a><br>
+            <a href="#" lang="en" class="tag-la">University</a><br>
+            <a href="#" lang="vi" class="tag-la">HCM</a>
+        </ul>
+        <li><code>:<b>link</b></code>:&emsp;<i>Định dạng cho tất cả các link chưa được click</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	a:link {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<a href="#" id="tag-lik">npthinh</a>
+        </ul>
+        <li><code>:<b>visited</b></code>:&emsp;<i>Định dạng cho các thành phần đã được click</i></li>
+        <b><u>Cấu trúc</u></b>
+        <ul>
+        	<code>
+            	a:visited {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<a href="#" id="tag-vi">npthinh</a>
+        </ul>
+        <li><code>[<b>Thuộc tính</b>]</code>:&emsp;<i>Chọn tất cả các thành phần có cùng thuộc tính (attribute)</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	[Thuộc tính] {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<a href="#" class="tag-tht" target="_blank">Blank</a><br>
+            <a href="#" class="tag-tht" target="_self">Self</a><br>
+            <a href="#" class="tag-tht">None</a>
+        </ul>
+        <li><code>[<b>Thuộc tính</b>|=Ngôn ngữ]</code>:&emsp;<i>Được sử dụng để chọn tất cả các thành phần với thuộc tính có giá trị ="Ngôn ngữ"</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	[Thuộc tính|=Ngôn ngữ] {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<div class="tag-tla" lang="en">Hello!</div>
+            <div class="tag-tla" lang="us">Hi!</div>
+            <div class="tag-tla" lang="vi">Xin chào!</div>
+        </ul>
+        <li><code>[<b>Thuộc tính</b>~=Giá trị]</code>:&emsp;<i>Chọn tất cả các thành phần với thuộc tính chứa một giá trị</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	[Thuộc tính~=Giá trị] {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<img src="image/ex-img-css-title.png" title="tag-ti" width="100" alt=""/>
+        </ul>
+        <li><code>[<b>Thuộc tính</b>=Giá trị</code>:&emsp;<i>Chọn tất cả các thành phần có thuộc tính bằng giá trị</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+        	<code>
+            	[Thuộc tính=Giá trị] {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<a href="#" class="tag-thg" target="_blank">Blank</a><br>
+            <a href="#" class="tag-thg" target="_self">Self</a>
+        </ul>
+        <h2 align="left">2. Thuộc tính CSS:</h2>
+    </ul>
+    <p align="right"><a href="#">Về đầu trang</a></p>
+</body>
+</html>

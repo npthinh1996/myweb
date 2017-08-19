@@ -1,0 +1,517 @@
+﻿<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+    <title>Build Website PT.9E | Cấu trúc &amp; Các lệnh trong HTML</title>
+  	<meta name="keywords" content="HTML,CSS,XHTML,JavaScript" />
+    <meta name="author" content="PT.9E" />
+    <link href="image/home-icon.png" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+    <div class='snow-container'>
+    <div class='snow foreground'></div>
+    <div class='snow foreground layered'></div>
+    <div class='snow middleground'></div>
+    <div class='snow middleground layered'></div>
+    <div class='snow background'></div>
+    <div class='snow background layered'></div>
+    </div>
+    
+    <h1 align="center">Cấu trúc &amp; Các lệnh trong HTML</h1>
+    <hr />
+    <a href="text_html5.html" target="_blank">HTML5</a>
+    <a href="text_css.html" target="_blank">CSS</a>
+    <a href="text_css-3.html" target="_blank">CSS3</a>
+    <hr />
+    <h2 align="left">1. Cấu trúc cơ bản:</h2>
+    <ul>
+        <dt><code>&lt;<b>!DOCTYPE</b> html&gt;</code>&emsp;<i>// Xác định phiên bản HTML</i></dt>
+        <dt><code>&lt;<b>html</b> lang="vi" xmlns="<b><u>http://www.w3.org/1999/xhtml</u></b>"&gt;</code>&emsp;<i>// Chọn ngôn ngữ Tiếng Việt - Mô tả sử dụng trong văn bản <a href="#">XHTML</a></i></dt>
+        <dt><code>&lt;<b>head</b>&gt;</code>&emsp;<i>// Xác định, khai báo thông tin về văn bản HTML</i></dt>
+        <dd><code>&lt;<b>title</b>&gt;ABC&lt;<b>/title</b>&gt;</code>&emsp;<i>// Xác định tiêu đề của trang HTML (ABC)</i></dd>
+        <dd><code>&lt;<b>meta</b> charset="utf-8" /&gt;</code>&emsp;<i>// Xác định bộ mã ký tự cho văn bản HTML</i></dd>
+        <dd><code>&lt;<b>link</b> href="Liên kết" rel="shortcut icon" /&gt;</code>&emsp;<i>// Tạo icon bên cạnh tên thẻ</i></dd>
+        <dd><code>&lt;<b>link</b> rel="stylesheet" type="text/css" href="main.css" /&gt;</code>&emsp;<i>// Xác định mối liên hệ giữa tài liệu HTML và tài liệu bên ngoài - Xác định kiểu <a href="#">MINE</a> (css) của tài liệu liên quan - Liên kết file "main.css" vào văn bản HTML</i></dd>
+        <dt><code>&lt;/<b>head</b>&gt;</code>&emsp;<i>// Đóng thẻ "head"</i></dt>
+        <dt><code>&lt;<b>body</b>&gt;</code>&emsp;<i>// Định nghĩa phần thân của văn bản HTML</i></dt>
+        <dd><code>...</code></dd>
+        <dt><code>&lt;/<b>body</b>&gt;</code>&emsp;<i>// Đóng thẻ "body"</i></dt>
+        <dt><code>&lt;/<b>html</b>&gt;</code>&emsp;<i>// Kết thúc văn bản HTML</i></dt>
+    </ul>
+    <hr />
+    <h2 align="left">2. Các lệnh cơ bản:</h2>
+    <ul>
+        <li><code>&lt;!--Nội dung--&gt;</code>:&emsp;<i>Dùng để chèn chú thích vào source code, dòng chú thích này sẽ không hiện trên trình duyệt</i></li>
+        <li><code>&lt;!<b>DOCTYPE</b>&gt;</code>:&emsp;<i>Chỉ cho trình duyệt web biết được phiên bản ngôn ngữ được sử dụng trong trang web</i></li>
+        <li><code>&lt;<b>a</b> href="Liên kết"&gt;&lt;/<b>a</b>&gt;</code>:&emsp;<i>Xác định một siêu liên kết (hyperlink)</i></li>
+        <li><code>&lt;<b>abbr</b> title="Nghĩa"&gt;Từ viết tắt&lt;/<b>abbr</b>&gt;</code>:&emsp;<abbr title="Mô tả một cụm từ viết tắt">Mtmctvt</abbr></li>
+        <li><code>&lt;<b>acronym</b> title="Nghĩa"&gt;Từ viết tắt&lt;/<b>acronym</b>&gt;</code>:&emsp;<acronym title="Mô tả một từ viết tắt">Mtmtvt</acronym></li>
+        <li><code>&lt;<b>address</b>&gt;"Nội dung"&lt;/<b>address</b>&gt;</code>:&emsp;<i>Xác định thông tin liên hệ (địa chỉ, mail, điện thoại,...)</i>
+       	    <ul>
+            	<li><code>&lt;<b>a</b> href="mailto: Địa chỉ email"&gt;Địa chỉ email&lt;/<b>a</b>&gt;</code>:&emsp;<i>Khi click vào sẽ mở ra một form gửi mail</i></li>
+            </ul>
+      	</li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+          <address>
+                Chủ sở hữu: Nguyễn Phước Thịnh<br>
+                Email: <a href="mailto:npthinh1996@gmail.com">npthinh1996@gmail.com</a><br>
+                Địa chỉ: Quận 10, TP.Hồ Chí Minh<br>
+                Điện thoại: (+84)989098494
+          </address>
+        </ul>
+        <li><code>&lt;<b>area</b> Thuộc tính="Giá trị" /&gt;</code>:&emsp;<i>Xác định vùng bên trong map của image</i>
+        	<ul>
+            	<li><code>&lt;<b>map</b> name="Tên map"&gt;&lt;<b>area</b> /&gt;&lt;/<b>map</b>&gt;</code>:&emsp;<i>Kết hợp lệnh <b>area</b> trong lệnh <b>map</b></i></li>
+                <li><code><b>shape</b>="rect" <b>coords</b>="Tọa độ Trái, Trên, Phải, Dưới"</code>:&emsp;<i>Xác định tọa độ của vùng được chọn có hình chữ nhật</i></li>
+                <li><code><b>shape</b>="circ" <b>coords</b>="Tọa độ Tâm x, Tâm y, Bán kính"</code>:&emsp;<i>Xác định tọa độ của vùng được chọn có hình tròn</i></li>
+                <li><code><b>shape</b>="poly" <b>coords</b>="Tọa độ x1, y1, x2, y2,..."</code>:&emsp;<i>Xác định tọa độ của vùng được chọn có hình bất kỳ</i></li>
+            </ul>
+        </li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<img src="image/exp-img-map.png" alt="star" usemap="#Stars" />
+            <map name="Stars">
+            	<area shape="poly" coords="151, 263, 155, 260, 156, 254, 161, 257, 167, 256, 165, 261, 167, 266, 162, 266, 158, 270, 157, 264" href="https://www.facebook.com/phuocthinh.nguyen.9e" target="_blank" />
+            </map>
+        </ul>
+        <li><code>&lt;<b>Kiểu định dạng font</b>&gt;Nội dung&lt;/<b>Kiểu định dạng font</b>&gt;</code>:&emsp;<i>Được dùng để định dạng kiểu cho font (khuyến khích dùng CSS)</i>
+        	<ul>
+            	<li><code>&lt;<b>tt</b>&gt;Nội dung&lt;/<b>tt</b>&gt;</code>:&emsp;<tt>Kiểu chữ văn bản máy</tt></li>
+                <li><code>&lt;<b>i</b>&gt;Nội dung&lt;/<b>i</b>&gt;</code>:&emsp;<i>Kiểu chữ in nghiêng</i></li>
+                <li><code>&lt;<b>b</b>&gt;Nội dung&lt;/<b>b</b>&gt;</code>:&emsp;<b>Kiểu chữ đậm</b></li>
+                <li><code>&lt;<b>big</b>&gt;Nội dung&lt;/<b>big</b>&gt;</code>:&emsp;<big>Kiểu chữ lớn</big></li>
+                <li><code>&lt;<b>small</b>&gt;Nội dung&lt;/<b>small</b>&gt;</code>:&emsp;<small>Kiểu chữ nhỏ</small></li>
+                <li><code>&lt;<b>em</b>&gt;Nội dung&lt;/<b>em</b>&gt;</code>:&emsp;<em>Dùng để nhấn mạnh văn bản</em></li>
+                <li><code>&lt;<b>strong</b>&gt;Nội dung&lt;/<b>strong</b>&gt;</code>:&emsp;<strong>Hiển thị hình ảnh mạnh, mục đích đánh dấu chữ</strong></li>
+                <li><code>&lt;<b>dfn</b>&gt;Nội dung&lt;/<b>dfn</b>&gt;</code>:&emsp;<dfn>Dùng cho thuật ngữ</dfn></li>
+                <li><code>&lt;<b>code</b>&gt;Nội dung&lt;/<b>code</b>&gt;</code>:&emsp;<code>Kiểu code trong máy tính</code></li>
+                <li><code>&lt;<b>samp</b>&gt;Nội dung&lt;/<b>samp</b>&gt;</code>:&emsp;<samp>Kiểu sample trong máy tính</samp></li>
+                <li><code>&lt;<b>kbd</b>&gt;Nội dung&lt;/<b>kbd</b>&gt;</code>:&emsp;<kbd>Kiểu bàn phím</kbd></li>
+                <li><code>&lt;<b>var</b>&gt;Nội dung&lt;/<b>var</b>&gt;</code>:&emsp;<var>Kiểu biến số</var></li>
+                <li><code>&lt;<b>cite</b>&gt;Nội dung&lt;/<b>cite</b>&gt;</code>:&emsp;<cite>Dùng cho văn bản trích dẫn</cite></li>
+            </ul>
+        </li>
+        <li><code>&lt;<b>base</b> Thuộc tính="Giá trị" /&gt;</code>:&emsp;<i>Xác định một địa chỉ mặc định hay một mục tiêu mặc định cho tất cả link trên trang</i>
+        	<ul>
+            	<li>Lệnh <code>&lt;<b>base</b>&gt;</code> nằm trong thành phần <code>&lt;<b>head</b>&gt;</code></li>
+            </ul>
+        </li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<code>
+            	&lt;<b>head</b>&gt;<br>
+                &emsp;&lt;<b>base</b> href="<b><u>https://www.facebook.com/phuocthinh.nguyen.9e</u></b> target="_blank" /&gt;<br>
+                &lt;/<b>head</b>&gt;<br>
+                &lt;<b>body</b>&gt;<br>
+                &emsp;&lt;<b>a</b> href="<b><u>https://www.facebook.com/phuocthinh.nguyen.9e</u></b>"&gt;Nguyễn Phước Thịnh&lt;/<b>a</b>&gt;<br>
+                &lt;/<b>body</b>&gt;
+            </code>
+        </ul>
+        <li><code>&lt;<b>bdo</b> dir="Thuộc tính"&gt;Nội dung&lt;/<b>bdo</b>&gt;</code>:&emsp;<i>Xác định hướng của text (từ trái sang phải hoặc từ phải sang trái)</i>
+        	<ul>
+            	<li><code>&lt;dir="ltl"&gt;</code>:&emsp;<bdo dir="ltr">Văn bản từ trái sang phải</bdo></li>
+                <li><code>&lt;dir="rlt"&gt;</code>:&emsp;<bdo dir="rtl">Văn bản từ phải sang trái</bdo></li>
+            </ul>
+        </li>
+        <li><code>&lt;<b>blockquote</b>&gt;Nội dung&lt;/<b>blockquote</b>&gt;</code>:&emsp;<i>Xác định một đoạn trích dẫn dài</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<blockquote>
+            	Đây là một đoạn trích dẫn dài, rất dài,...<br>
+                Thêm một đoạn trích dẫn dài, rất dài,...
+         	</blockquote>
+        </ul>
+        <li><code>&lt;<b>br</b> /&gt;</code>:&emsp;<i>Ngắt một đoạn text xuống hàng</i></li>
+        <li><code>&lt;<b>button</b> type="Thuộc tính"&gt;Tên nút nhấn&lt;/<b>button</b>&gt;</code>:&emsp;<i>Xác định một button</i>
+        <ul>
+        	<li><code>&lt;type="button"&gt;</code>:&emsp;<i>Nút nhấn</i></li>
+            <li><code>&lt;type="reset"&gt;</code>:&emsp;<i>Nút reset form</i></li>
+            <li><code>&lt;type="submit"&gt;</code>:&emsp;<i>Nút submit form</i></li>
+        </ul>           
+        </li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<button type="button">Click me!</button>
+        </ul>
+        <li><code>&lt;<b>caption</b>&gt;Nội dung&lt;/<b>caption</b>&gt;</code>:&emsp;<i>Xác định một chú thích cho table</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<table border="1">
+            	<caption>Bảng chú thích</caption>
+                <tr>
+                	<th>Tiêu đề A</th>
+                    <th>Tiêu đề B</th>
+                </tr>
+                <tr>
+                	<td>Dữ liệu 1</td>
+                    <td>Dữ liệu 2</td>
+                </tr>
+                <tr>
+                	<td>Dữ liệu 3</td>
+                    <td>Dữ liệu 4</td>
+                </tr>
+            </table>
+        </ul>
+        <li><code>&lt;<b>dd</b>&gt;Nội dung&lt;/<b>dd</b>&gt;</code>:&emsp;<i>Dùng để mô tả các mục trong danh sách</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<dl>
+            	<dt>Mục 1:</dt>
+                	<dd>Mô tả 1</dd>
+               	<dt>Mục 2:</dt>
+                	<dd>Mô tả 2</dd>
+            </dl>
+        </ul>
+        <li><code>&lt;<b>del</b>&gt;Nội dung&lt;/<b>del</b>&gt;</code>:&emsp;<del>Hiển thị đường gạch bỏ text</del></li>
+        <li><code>&lt;<b>div</b>&gt;Nội dung&lt;/<b>div</b></code>:&emsp;<i>Xác định một phân chia khu vực hay một vùng trong văn bản</i></li>
+        <li><code>&lt;<b>dl</b>&gt;Nội dung&lt;/<b>dl</b>&gt;</code>:&emsp;<i>Xác định một danh sách</i></li>
+        <li><code>&lt;<b>dt</b>&gt;Nội dung&lt;/<b>dt</b>&gt;</code>:&emsp;<i>Xác định một đề mục trong danh sách</i></li>
+        <li><code>&lt;<b>fieldset</b>&gt;Nội dung&lt;/<b>fieldset</b>&gt;</code>:&emsp;<i>Dùng để nhóm các thành phần trong form một cách hợp lý</i>
+        	<ul>
+            	<li><code>&lt;<b>legend</b>&gt;</code>:&emsp;<i>Định nghĩa một chú thích cho "fieldset"</i></li>
+            </ul>
+        </li>
+       	<b><u>Ví dụ:</u></b>
+        <ul>
+    		<form action="#">
+            	<fieldset>
+                	<legend>Thông tin cá nhân</legend>
+                    Họ tên: &emsp;&ensp;<input type="text" size="30" /><br>
+                    Email: &emsp;&ensp;&nbsp;<input type="text" size="30" /><br>
+                    Ngày sinh: <input type="text" size="10" /> 
+                </fieldset>
+            </form>
+        </ul>
+        <li><code>&lt;<b>form</b> Thuộc tính="Giá trị"&gt;Nội dung&lt;/<b>form</b>&gt;</code>:&emsp;<i>Xác định một form HTML cho người dùng nhập</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+      		<form action="#">
+            	<dl>
+                	<dt>Họ tên:&emsp;&ensp;&nbsp;<input type="text" size="30" /></dt>
+                    <dt>Email:&emsp;&ensp;&nbsp;&nbsp;<input type="text" size="30" /></dt>
+                    <dt>Ngày sinh: <input type="text" size="10" /></dt>
+                </dl>
+                <input type="submit" value="Gửi" />
+            </form>  	
+        </ul>
+        <li><code>&lt;<b>frame</b> src="Liên kết trang" /&gt;</code>:&emsp;<i>Xác định một frame trong một khung (frameset)</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<a href="frame.html" target="_blank">Demo Frame</a>
+        </ul>
+        <li><code>&lt;<b>frameset</b> Thuộc tính="Giá trị"&gt;Nội dung&lt;/<b>frameset</b>&gt;</code>:&emsp;<i>Xác định một khung (frameset)</i>
+        	<ul>
+            	<li><code>&lt;<b>noframes</b>&gt;Nội dung thông báo&lt;/<b>noframes</b>&gt;</code>:&emsp;<i>HIển thị nội dung thông báo nếu trình duyệt không hỗ trợ "frame"</i></li>
+                <li><code>&lt;<b>frameset</b> cols="50px"&gt;Nội dung&lt;/<b>frameset</b>&gt;</code>:&emsp;<i>Chỉ định kích thước cột của "frameset"</i></li>
+                <li><code>&lt;<b>frameset</b> rows="50px"&gt;Nội dung&lt;/<b>frameset</b>&gt;</code>:&emsp;<i>Chỉ định kích thước hàng của "frameset"</i></li>
+                <li>Không thể sử dụng thành phần <code>&lt;<b>body</b>&gt;</code> cùng với <code>&lt;<b>frameset</b>&gt;</code></li>
+            </ul>
+        </li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<a href="frame.html" target="_blank">Demo Frame</a>
+        </ul>
+        <li><code>&lt;<b>hx</b>&gt;Nội dung&lt;/<b>hx</b>&gt;</code>:&emsp;<i>Xác định tiêu đề HTML</i>
+        	<ul>
+            	<li><h1><code><b>h1</b></code>:&emsp;Đây là tiêu đề quan trọng nhất</h1></li>
+                <li><h2><code><b>h2</b></code>:&emsp;Đây là tiêu đề quan trọng thứ nhì</h2></li>
+                <li><h3><code><b>h3</b></code>:&emsp;Đây là tiêu đề quan trọng thứ ba</h3></li>
+                <li><h4><code><b>h4</b></code>:&emsp;Đây là tiêu đề quan trọng thứ tư</h4></li>
+                <li><h5><code><b>h5</b></code>:&emsp;Đây là tiêu đề quan trọng thứ năm</h5></li>
+                <li><h6><code><b>h6</b></code>:&emsp;Đây là tiêu đề ít quan trọng nhất</h6></li>
+         	</ul>
+        </li>
+        <li><code>&lt;<b>head</b>&gt;Nội dung&lt;/<b>head</b>&gt;</code>:&emsp;<i>Xác định, khai báo thông tin về văn bản HTML</i>
+        	<ul>
+            	<li><code>&lt;<b>meta</b> /&gt;</code>:&emsp;<i>Khai báo thông tin cho văn bản HTML</i></li>
+                <li><code>&lt;<b>link</b> /&gt;</code>:&emsp;<i>Kết nối tới file CSS</i></li>
+                <li><code>&lt;<b>script</b> /&gt;</code>:&emsp;<i>Kết nối tới file Javascript</i></li>
+                <li>Thẻ <code>&lt;<b>head</b>&gt;</code> bắt buộc phải có trong các trình biên dịch hỗ trợ</li>
+            </ul>
+        </li>
+        <li><code>&lt;<b>hr</b> /&gt;</code>:&emsp;<i>Tạo một đường ngang</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<hr />
+        </ul>
+        <li><code>&lt;<b>html</b>&gt;Nội dung&lt;/<b>html</b>&gt;</code>:&emsp;<i>Xác định một văn bản HTML</i>
+        	<ul>
+            	<li><code>&lt;<b>html</b> xmlns="http://www.w3.org/1999/xhtml"&gt;Nột dung&lt;/<b>html</b>&gt;</code>:&emsp;<i>Chỉ sử dụng trong văn bản XHTML</i></li>
+                <li>Thẻ <code>&lt;<b>html</b>&gt;</code> nằm dưới thẻ <code>&lt;<b>!DOCTYPE</b>&gt;</code></li>
+            </ul>
+        </li>
+        <li><code>&lt;<b>iframe</b> Thuộc tính="Giá trị"&gt;Nội dung&lt;/<b>iframe</b>&gt;</code>:&emsp;<i>Xác định một khung nội tuyến</i>
+        	<ul>
+            	<li><code>&lt;<b>iframe</b> frameborder="Giá trị 0 hoặc 1"&gt;Nội dung&lt;/<b>iframe</b>&gt;</code>:&emsp;<i>Xác định đường viền quanh một "iframe"</i></li>
+                <li>Phần nội dung dùng để thông báo cho người xem nếu trình duyệt không hỗ trợ <code>&lt;<b>iframe</b>&gt;</code></li>
+            </ul>
+        </li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<iframe src="index.html" frameborder="1" height="360" width="720">
+            	<p>Trình duyệt của bạn không hỗ trợ iframe!</p>
+            </iframe>
+        </ul>
+        <li><code>&lt;<b>img</b> src="Đường dẫn" /&gt;</code>:&emsp;<i>Hiển thị một image</i>
+        	<ul>
+            	<li><code>&lt;<b>img</b> alt="Thông báo" /&gt;</code>:&emsp;<i>Được sử dụng như một văn bản thay thế khi image không hiển thị (hoặc không có sẵn)</i></li>
+            </ul>
+        </li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<img src="image/exp-img.jpg" alt="Text image" height="360" width="720" />
+        </ul>
+        <li><code>&lt;<b>input</b> Thuộc tính="Giá trị" /&gt;</code>:&emsp;<i>Xác định một điều khiển nhập</i>
+        	<ul>
+            	<li>Thẻ <code>&lt;<b>input</b>&gt;</code> phải được viết trong một thẻ <code>&lt;<b>form</b>&gt;</code></li>
+                <li>Input dạng text: <input type="text" value="" size="20" maxlength="15" /></li>
+                <li>Input dạng password: <input type="password" value="" size="20" /></li>
+                <li>Input dạng hidden: <input type="hidden" value="" size="20" /></li>
+                <li>Input dạng checkbox: <input type="checkbox" value="" /> <input type="checkbox" value="" checked="checked" /> <input type="checkbox" value="" disabled="disabled" /> <input type="checkbox" value="" checked="checked" disabled="disabled" /></li>
+               	<li>Input dạng radio: <input type="radio" name="checkradio-1" value="" /> <input type="radio" name="checkradio-1" value="" /> <input type="radio" name="checkradio-2" value="" checked="checked" /> <input type="radio" name="checkradio-3" value="" checked="checked" disabled="disabled" /></li>
+                <li>Input dạng button: <input type="button" value="Click" /></li>
+                <li>Input dạng button reset:&emsp;<i>Dùng để reset lại giá trị trong "form"</i>
+                	<ul>
+                		<form action="#">
+                    		<input type="text" value="" size="20" />
+                     		<input type="reset" value="Reset" />
+                    	</form>
+                    </ul>
+                </li>
+                <li>Input dạng button submit:&emsp;<i>Dùng để gửi dữ liệu lên server thông qua thuộc tính "action" trong "form"</i>
+                	<ul>
+                    	<form action="#">
+                        	<input type="text" value="" size="20" />
+                            <input type="submit" value="Submit" />
+                        </form>
+                    </ul>
+                </li>
+                <li>Input dạng image: <input type="image" src="image/exp-img-button.png" alt="SUBMIT" height="40" width="40" /></li>
+                <li>Input dạng file upload: <input type="file" /></li>
+            </ul>
+        </li>
+        <li><code>&lt;<b>label</b> Thuộc tính="Giá trị"&gt;Nội dung thẻ input&lt;/<b>label</b>&gt;</code>:&emsp;<i>Tạo một nhãn cho thành phần "input"</i>
+        	<ul>
+            	<li>Cải thiện hiệu quả cho người sử dụng chuột, nếu click chuột vào nhãn sẽ đưa con trỏ chuột vào vùng <code>&lt;<b>input</b>&gt;</code></li>
+                <li>Để sử dụng hiệu quả <code>&lt;<b>label</b>&gt;</code> cần thiết giá trị <i>"id"</i> của <code>&lt;<b>input /</b>&gt;</code> và giá trị <i>"for"</i> của <code>&lt;<b>label</b>&gt;</code> phải trùng nhau</li>
+            </ul>
+        </li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<label for="email-label">Email</label>: <input type="text" id="email-label" name="email-label" value="" size="20" />
+        </ul>
+        <li><code>&lt;<b>li</b>&gt;Nội dung&lt;/<b>li</b>&gt;</code>:&emsp;<i>Xác định danh sách item</i></li>
+        <li><code>&lt;<b>map</b> Thuộc tính="Giá trị"&gt;Nội dung&lt;/<b>map</b>&gt;</code>:&emsp;<i>Xác định map cho image</i>
+        	<ul>
+            	<li>Trong thẻ <code>&lt;<b>map</b>&gt;</code> bắt buộc phải có thuộc tính <i>"name"</i> để tạo ra mối liên hệ giữa image và map</li>
+            </ul>
+        </li>
+        <li><code>&lt;<b>meta</b> Thuộc tính="Giá trị" /&gt;</code>:&emsp;<i>Xác định siêu dữ liệu về một văn bản HTML</i>
+        	<ul>
+            	<li><code>&lt;<b>meta</b> name="decription" content="Build Website PT9E" /&gt;</code>:&emsp;<i>Dùng để mô tả cho trang HTML với nội dung trong phần "content"</i></li>
+                <li><code>&lt;<b>meta</b> name="keywords" content="HTML,CSS,XHTML,JavaScript" /&gt;</code>:&emsp;<i>Xác định từ khóa cho trang HTML, mục đích cho bọ tìm kiếm đến chìa khóa, được mô tả trong phần "content"</i></li>
+                <li><code>&lt;<b>meta</b> name="author" content="PT.9E" /&gt;</code>:&emsp;<i>Xác định tác giả của trang HTML với nội dung trong phần "content"</i></li>
+                <li><code>&lt;<b>meta</b> http-equiv="content-type" content="text/html,charset=UTF-8" /&gt;</code>:&emsp;<i>Cung cấp tiêu đề cho trang HTML với nội dung trong phần "content"</i></li>
+            </ul>
+        </li>
+        <li><code>&lt;<b>object</b> Thuộc tính="Giá trị"&gt;Nội dung&lt;/<b>object</b>&gt;</code>:&emsp;<i>Xác định một đối tượng nhúng</i>
+        	<ul>
+            	<li><code>&lt;<b>object</b> data="Đường dẫn"&gt;Nội dung&lt;/<b>object</b>&gt;</code>:&emsp;<i>Xác định URL liên quan đến dữ liệu</i></li>
+                <li><code>&lt;<b>object</b> type="Định dạng"&gt;Nội dung&lt;/<b>object</b>&gt;</code>:&emsp;<i>Định nghĩa Kiểu định dạng "MIME" của dữ liệu được quy định trong các thuộc tính dữ liệu</i></li>
+                <li><code>&lt;<b>object</b> standby="Thông báo"&gt;Nội dung&lt;/<b>object</b>&gt;</code>:&emsp;<i>Xác định đoạn text hiển thị trong khi dữ liệu đang load</i></li>
+                <li>Trong trường hợp các trình duyệt không hiển thị được đối tượng thì đoạn code bên trong thẻ <code>&lt;<b>object</b>&gt;</code> sẽ được xuất hiện để thông báo</li>
+            </ul>
+        </li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<object data="data/truyen-cuoi.pdf" type="application/pdf" standby="Loading..." height="360" width="720"><a href="data/truyen-cuoi-do-day.pdf" target="_blank">Link PDF</a></object>
+        </ul>
+        <li><code>&lt;<b>ol</b>&gt;Nội dung&lt;/<b>ol</b>&gt;</code>:&emsp;<i>Xác định danh sách có thứ tự</i></li>
+        <li><code>&lt;<b>optgroup</b> Thuộc tính="Giá trị"&gt;Nội dung danh sách&lt;/<b>optgroup</b>&gt;</code>:&emsp;<i>Xác định một nhóm các tùy chọn liên quan trong một "select"</i>
+        	<ul>
+            	<li><code>&lt;<b>optgroup</b> label="Tên nhóm"&gt;Nội dung danh sách&lt;/<b>optgroup</b>&gt;</code>:&emsp;<i>Dùng để đặt tiêu đề cho các nhóm tùy chọn</i></li>
+            </ul>
+        </li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<select>
+            	<optgroup label="Danh sách số:">
+                	<option>Danh sách 01</option>
+                    <option>Danh sách 02</option>
+                    <option>Danh sách 03</option>
+                </optgroup>
+                <optgroup label="Danh sách chữ:">
+                	<option>Danh sách A</option>
+                    <option>Danh sách B</option>
+                    <option>Danh sách C</option>
+                </optgroup>
+            </select>
+            <select>
+            	<optgroup label="Danh sách số:" disabled="disabled">
+                	<option>Danh sách 01</option>
+                    <option>Danh sách 02</option>
+                    <option>Danh sách 03</option>
+                </optgroup>
+                <optgroup label="Danh sách chữ:">
+                	<option>Danh sách A</option>
+                    <option>Danh sách B</option>
+                    <option>Danh sách C</option>
+                </optgroup>
+            </select>
+        </ul>
+        <li><code>&lt;<b>option</b> Thuộc tính="Giá trị"&gt;Nội dung&lt;/<b>option</b>&gt;</code>:&emsp;<i>Xác định một tùy chọn trong một "select"</i>
+        	<ul>
+            	<li>Select - option:
+                	<select>
+                    	<option>Danh sách 1</option>
+                        <option>Danh sách 2</option>
+                        <option>Danh sách 3</option>
+                    </select>
+                </li>
+                <li>Select - option với thuộc tính name:
+                	<select name="TenDanhsach">
+                    	<option>Danh sách 1</option>
+                        <option>Danh sách 2</option>
+                        <option>Danh sách 3</option>
+                    </select>
+                </li>
+                <li>Select - option với thuộc tính disabled:
+                	<select disabled="disabled">
+                    	<option>Danh sách 1</option>
+                        <option>Danh sách 2</option>
+                        <option>Danh sách 3</option>
+                    </select>
+                    <select>
+                    	<option disabled="disabled">Danh sách 1</option>
+                        <option>Danh sách 2</option>
+                        <option>Danh sách 3</option>
+                    </select>
+                </li>
+                <li>Select - option với thuộc tính multiple:
+                	<select multiple="multiple">
+                    	<option>Danh sách 1</option>
+                        <option>Danh sách 2</option>
+                        <option>Danh sách 3</option>
+                        <option>Danh sách 4</option>
+                        <option>Danh sách 5</option>                            
+                  	</select>
+                </li>
+                <li>Select - option với thuộc tính size:
+                	<select size="3">
+                    	<option>Danh sách 1</option>
+                        <option>Danh sách 2</option>
+                        <option>Danh sách 3</option>
+                        <option>Danh sách 4</option>
+                        <option>Danh sách 5</option>
+                    </select>
+           		</li>
+                <li>Option với thuộc tính selected:
+                	<select>
+                    	<option>Danh sách 1</option>
+                        <option>Danh sách 2</option>
+                        <option selected="selected">Danh sách 3</option>
+                    </select>
+                </li>
+            </ul>
+        </li>
+        <li><code>&lt;<b>p</b>&gt;Nội dung&lt;/<b>p</b>&gt;</code>:&emsp;<i>Xác định một đoạn văn</i></li>
+        <li><code>&lt;<b>pre</b>&gt;Nội dung&lt;/<b>pre</b>&gt;</code>:&emsp;<i>Xác định văn bản định dạng sẵn</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<pre>
+            	Đây là đoạn text
+            	sử dụng thẻ   pre
+           	</pre>
+        </ul>
+        <li><code>&lt;<b>q</b>&gt;Nội dung&lt;/<b>q</b>&gt;</code>:&emsp;<i>Định nghĩa một đoạn trích dẫn ngắn</i></li>
+       	<b><u>Ví dụ:</u></b>
+        <ul>
+        	<q>Đây là đoạn trích dẫn ngắn</q>
+        </ul>	
+        <li><code>&lt;<b>script</b> Thuộc tính="Giá trị"&gt;Nội dung&lt;/<b>script</b>&gt;</code>:&emsp;<i>Xác định một "script"</i>
+        	<ul>
+            	<li><code>&lt;<b>noscript</b>&gt;Nội dung thông báo&lt;/<b>noscript</b>&gt;</code>:&emsp;<i>Hiển thị nội dung thông báo nếu trình duyệt không hỗ trợ "scrpit"</i></li>
+            </ul>
+        </li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<script type="text/javascript">document.write("Hello World!")</script>
+        </ul>
+        <li><code>&lt;<b>select</b>&gt;Nội dung&lt;/<b>select</b>&gt;</code>:&emsp;<i>Xác định danh sách lựa chọn</i></li>
+        <li><code>&lt;<b>span</b> Thuộc tính="Giá trị"&gt;Nội dung&lt;/<b>span</b>&gt;</code>:&emsp;Được <span class="red">sử dụng</span> để nhóm các <i>"inline"</i> trong văn bản HTML</li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <span>Đây là đoạn text có sử dụng span.</span>
+        </ul>
+        <li><code>&lt;<b>style</b> type="text/css"&gt;Nội dung thuộc tính&lt;/<b>style</b>&gt;</code>:&emsp;<i>Được dùng để định dạng một văn bản HTML</i>
+        	<ul>
+            	<li><code>&lt;<b>style</b>&gt;</code> được đặt trong thành phần <code>&lt;<b>head</b>&gt;</code></li>
+            </ul>
+        </li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<code>
+        		&lt;<b>head</b>&gt;<br>
+            	&lt;<b>style</b> type="text/css"&gt;<br>
+            	p {color: red;}<br>
+            	&lt;/<b>style</b>&gt;<br>
+            	&lt;/<b>head</b>&gt;
+        	</code>
+            <p>Đoạn code trên sẽ làm cho phần text trong thẻ <code>&lt;<b>p</b>&gt;</code> có màu đỏ</p>
+        </ul>
+        <li><code>&lt;<b>sub</b>&gt;Nội dung&lt;/<b>sub</b>&gt;</code>:&emsp;Tạo một ký tự nhỏ <sub>bên dưới</sub></li>
+        <li><code>&lt;<b>sup</b>&gt;Nội dung&lt;/<b>sup</b>&gt;</code>:&emsp;Tạo một ký tự nhỏ <sup>bên trên</sup></li>
+        <li><code>&lt;<b>table</b> Thuộc tính="Giá trị"&gt;Nội dung&lt;/<b>table</b>&gt;</code>:&emsp;<i>Tạo một bảng HTML</i>
+        	<ul>
+            	<li><code>&lt;<b>tr</b>&gt;</code>:&emsp;<i>Xác định hàng của table</i></li>
+                <li><code>&lt;<b>th</b>&gt;Nội dung&lt;/<b>th</b>&gt;</code>:&emsp;<i>Xác định phần tử tiêu đề của table</i></li>
+                <li><code>&lt;<b>td</b>&gt;Nội dung&lt;/<b>td</b>&gt;</code>:&emsp;<i>Xác định phần tử nội dung của table</i></li>
+                <li><code>&lt;border="Giá trị"&gt;</code>:&emsp;<i>Xác định đường viền quanh table</i></li>
+                <li><code>&lt;cellpadding="Giá trị"&gt;</code>:&emsp;<i>Xác định khoảng trống giữa các bên ngoài cột và nội dung cột</i></li>
+                <li><code>&lt;cellpacing="Giá trị"&gt;</code>:&emsp;<i>Xác định khoảng cách giữa các cột</i></li>
+            </ul>
+        </li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<table border="1">
+            	<tr>
+                <th>A</th>
+                <th>B</th>
+                </tr>
+                <tr>
+                <td>1</td>
+                <td>5</td>
+                </tr>
+                <tr>
+                <td>9</td>
+                <td>10</td>
+                </tr>
+            </table>
+            <br>
+            <table border="1">
+            	<tr>
+                <th>A</th>
+                <td>1</td>
+                <td>3</td>
+                </tr>
+                <tr>
+                <th>B</th>
+                <td>2</td>
+                <td>4</td>
+                </tr>
+            </table>
+        </ul>
+        <li><code>&lt;<b>textarea</b> rows="Giá trị" cols="Giá trị"&gt;Nội dung&lt;/<b>textarea</b>&gt;</code>:&emsp;<i>Dùng để nhập nhiều dòng văn bản</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+        	<textarea rows="3" cols="50">Đây là phần nội dung kích thước 20x30</textarea>
+        </ul>
+        <li><code>&lt;<b>title</b> Thuộc tính="Giá trị"&gt;Nội dung&lt;/<b>title</b>&gt;</code>:&emsp;<i>Xác định tiêu đề cho văn bản HTML</i></li>
+        <li><code>&lt;<b>ul</b>&gt;Nội dung&lt;/<b>ul</b>&gt;</code>:&emsp;<i>Tạo danh sách không có thứ tự</i></li>  
+    </ul>
+    <p align="right"><a href="#">Về đầu trang</a></p>
+</body>
+</html>

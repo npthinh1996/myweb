@@ -1,0 +1,888 @@
+﻿<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>Build Website PT.9E | Cấu trúc &amp; Các lệnh trong CSS</title>
+	<meta name="keywords" content="HTML,CSS,XHTML,JavaScript" />
+    <meta name="author" content="PT.9E" />
+    <link href="image/home-icon.png" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="main_css.2.css" />
+</head>
+
+<body>
+    <h1 align="center">Cấu trúc &amp; Các lệnh trong CSS</h1>
+    <p align="center"><audio src="audio\We Don't Talk Anymore - Charlie Puth ft. Selena Gomez.mp3" controls loop preload="none" /></p>
+    <hr />
+    <a href="index.html" target="_blank">HTML</a>
+    <a href="text_css.html" target="_blank">CSS</a>
+    <hr />
+    <h2 align="left">2. Thuộc tính CSS:</h2>
+    <ul>
+        <li><code><b>background</b></code>:&emsp;<i>Định dạng nền (background) cho thành phần</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <span id="bagr">Đây là tag <code>&lt;<b>div</b>&gt;</code> có sử dụng thuộc tính <code><b>background</b></code></span>
+        </ul>
+       <li><code><b>border</b></code>:&emsp;<i>Định dạng đường viền cho thành phần</i></li>
+       <b><u>Cấu trúc</u></b>
+       <ul>
+           <code>
+               tag {<br>
+               property: width style color;<br>
+               }
+           </code>
+       </ul>
+       <b><u>Kiểu cho <code>&lt;border&gt;</code>:</u></b>
+       <ul class="in-line">
+           <li><code><b>none</b></code>:&emsp;<span>Xác định thành phần sẽ không có đường viền</span></li>
+           <li><code><b>hidden</b></code>:&emsp;<span>Giống như giá trị <code><b>&lt;none&gt;</b></code>, nhưng được dùng cho table</span></li>
+           <li><code><b>dotted</b></code>:&emsp;<span id="bo-dot">Xác định đường viền cho thành phần là dấu chấm</span></li>
+           <li><code><b>dashed</b></code>:&emsp;<span id="bo-das">Xác định đường viền cho thành phần là gạch ngang</span></li>
+           <li><code><b>solid</b></code>:&emsp;<span id="bo-sol">Xác định đường viền cho thành phần là đường thẳng nét</span></li>
+           <li><code><b>double</b></code>:&emsp;<span id="bo-dou">Xác định đường viền cho thành phần là 2 đường thẳng nét</span></li>
+           <li><code><b>groove</b></code>:&emsp;<span id="bo-gro">Xác định đường viền cho thành phần là đường rãnh</span></li>
+           <li><code><b>ridge</b></code>:&emsp;<span id="bo-rid">Xác định đường viền cho thành phần đường chóp</span></li>
+           <li><code><b>inset</b></code>:&emsp;<span id="bo-in">Xác định đường viền cho thành phần là đường bóng bên trong</span></li>
+           <li><code><b>outset</b></code>:&emsp;<span id="bo-out">Xác định đường viền cho thành phần là đường bóng bên ngoài</span></li>
+           <li><code><b>inherit</b></code>:&emsp;<span id="bo-inh">Xác định thừa hưởng thuộc tính từ thành phần cha (thành phần bao ngoài)</span></li>
+       </ul>
+       <li><code><b>border-collapse</b></code>:&emsp;<i>Xác định đường viền của table có tách biệt ra hay không</i></li>
+       <b><u>Cấu trúc:</u></b>
+       <ul>
+           <code>
+               table {<br>
+               border-collapse: value;<br>
+               }
+           </code>
+       </ul>
+       <b><u>Ví dụ:</u></b>
+       <ul>
+           <table border="1" id="col-tal">
+               <tr>
+                   <th>Thứ hai</th>
+                   <th>Thứ ba</th>
+               </tr>
+               <tr>
+                   <td>2000đ</td>
+                   <td>5000đ</td>
+               </tr>
+               <tr>
+                   <td>500đ</td>
+                   <td>400đ</td>
+               </tr>
+           </table>
+       </ul>
+       <li><code><b>border-spacing</b></code>:&emsp;<i>Xác định khoảng cách giữa các đường viền của các cột lân cận</i></li>
+       <b><u>Cấu trúc</u></b>
+       <ul>
+           <code>
+               table {<br>
+               border-spacing: value;<br>
+               }
+           </code>
+       </ul>
+       <b><u>Ví dụ:</u></b>
+       <ul>
+           <table border="1" id="spa-tal">
+               <tr>
+                   <th>Thứ hai</th>
+                   <th>Thứ ba</th>
+               </tr>
+               <tr>
+                   <td>2000đ</td>
+                   <td>5000đ</td>
+               </tr>
+               <tr>
+                   <td>500đ</td>
+                   <td>400đ</td>
+               </tr>
+           </table>
+       </ul>
+       <li><code><b>bottom</b></code>:&emsp;<i>Xác định vị trí dưới cùng của thành phần được định vị trí</i></li>
+       <b><u>Cấu trúc:</u></b>
+       <ul>
+           <code>
+               tag {<br>
+               bottom: value;<br>
+               }
+           </code>
+       </ul>
+       <b><u>Ví dụ:</u></b>
+       <ul>
+           <div id="bot">
+               <p>Đây là tag <code>&lt;<b>p</b>&gt;</code> có vị trí dưới <code>&lt;<b>bottom</b>&gt;</code></p>
+           </div>
+       </ul>
+       <li><code><b>caption-side</b></code>:&emsp;<i>Xác định vị trí chú thích của một table</i></li>
+       <b><u>Cấu trúc:</u></b>
+       <ul>
+           <code>
+               caption {<br>
+                   caption-side: value;<br>
+               }
+           </code>
+       </ul>
+       <b><u>Ví dụ:</u></b>
+       <ul>
+           <table border="1" id="cap-si">
+               <caption>Caption của table</caption>
+               <tr>
+                   <th>Thứ hai</th>
+                   <th>Thứ ba</th>
+               </tr>
+               <tr>
+                   <td>2000đ</td>
+                   <td>5000đ</td>
+               </tr>
+               <tr>
+                   <td>500đ</td>
+                   <td>400đ</td>
+               </tr>
+           </table>
+       </ul>
+       <li><code><b>clear</b></code>:&emsp;<i>Xác định 2 bên của phần tử (left, right), nơi mà phần tử <code>&lt;<b>float</b>&gt;</code> không được cho phép</i></li>
+       <b><u>Cấu trúc:</u></b>
+       <ul>
+           <code>
+               tag {<br>
+                   clear: value;<br>
+               }
+           </code>
+       </ul>
+       <b><u>Ví dụ:</u></b>
+       <ul>
+           <div id="clr-fl"><img src="image\like-icon.png" title="Like icon" alt="Like icon" width="50px" /></div>
+           <div> Dòng text này không sử dụng thuộc tính <code>&lt;<b>clear</b>&gt;</code>, nên bị ảnh hưởng <code>&lt;<b>float</b>&gt;</code> của thành phần <code>&lt;<b>div</b>&gt;</code> có <code><b>id</b>="clr-fl"</code></div>
+           <div id="clr">Dòng text này có sử dụng thuộc tính <code>&lt;<b>clear</b>&gt;</code>, nên không bị ảnh hưởng <code>&lt;<b>float</b>&gt;</code> của thành phần <code>&lt;<b>div</b>&gt;</code> có <code><b>id</b>="clr-fl"</code></div>
+       </ul>
+       <li><code><b>clip</b></code>:&emsp;<i>Xác định đoạn cho thành phần khi sử dụng thuộc tính <code>&lt;<b>position</b>&gt;</code> có giá trị <code>"absolute"</code></i></li>
+       <b><u>Cấu trúc:</u></b>
+       <ul>
+           <code>
+               tag {<br>
+                   clip: rect(top, right, bottom, left);<br>
+               }
+           </code>
+       </ul>
+       <b><u>Ví dụ:</u></b>
+       <ul>
+           <img src="image\home-icon.png" title="Home icon" alt="Home icon" width="128px"/>
+           <span id="clp"><img src="image\home-icon.png" title="Home icon" alt="Home icon" width="128px"/></span>
+       </ul>
+       <li><code><b>color</b></code>:&emsp;<i>Xác định màu sắc cho text</i></li>
+       <b><u>Cấu trúc:</u></b>
+       <ul>
+           <code>
+               tag {<br>
+                   color: value;<br>
+               }
+           </code>
+       </ul>
+       <b><u>Ví dụ:</u></b>
+       <ul>
+           <span id="colr">NGUYỄN PHƯỚC THỊNH</span>
+       </ul>
+       <li><code><b>content</b></code>:&emsp;<i>Sử sụng kèm với bộ chọn <code>"<b>:before</b>"</code>, <code>"<b>:after</b>"</code> để chèn nội dung được tạo</i></li>
+       <b><u>Cấu trúc:</u></b>
+       <ul>
+           <code>
+               tag {<br>
+                   content: value;<br>
+               }
+           </code>
+       </ul>
+       <b><u>Ví dụ:</u></b>
+       <ul>
+           <div id="cont">NPT</div>
+       </ul>
+       <li><code><b>counter-increment</b></code>:&emsp;<i>Gia tăng một hoặc nhiều <code><b>counter</b></code> (sắp xếp có thứ tự, có hiển thị số)</i></li>
+       <b><u>Cấu trúc:</u></b>
+       <ul>
+           <code>
+               tag {<br>
+                   counter-increment: value;<br>
+               }
+           </code>
+       </ul>
+       <ul>
+           <li>Sử dụng một tên nào đó để xác định sự liên quan giữa các giá trị <code><b>counter-increment</b></code> và <code><b>content</b></code></li>
+       </ul>
+       <b><u>Ví dụ:</u></b>
+       <ul id="cou-in">
+           <div>HTML/XHTML</div>
+           <div>CSS</div>
+           <div>JQUERY</div>
+           <div>JAVASCRIPT</div>
+       </ul>
+       <li><code><b>counter-reset</b></code>:&emsp;<i>Tạo hoặc reset một hoặc nhiều counter</i></li>
+       <b><u>Cấu trúc:</u></b>
+       <ul>
+           <code>
+               tag {<br>
+                   counter-reset: value;<br>
+               }
+           </code>
+       </ul>
+       <li><code><b>cursor</b></code>:&emsp;<i>Xác định kiểu con trỏ chuột được hiển thị</i></li>
+       <b><u>Cấu trúc:</u></b>
+       <ul>
+           <code>
+               tag {<br>
+                   cursor: value;<br>
+               }
+           </code>
+       </ul>
+       <b><u>Các thuộc tính:</u></b>
+        <ul>
+           <li><code><b>auto</b></code>:&emsp;<span id="cu-au">Trình duyệt tự động thiết lập con trỏ chuột, đây là dạng mặc định</span></li>
+           <li><code><b>crosshair</b></code>:&emsp;<span id="cu-cro">Con trỏ chuột dạng crosshair</span></li>
+           <li><code><b>default</b></code>:&emsp;<span id="cu-de">Con trỏ chuột dạng default</span></li>
+           <li><code><b>e-resize</b></code>:&emsp;<span id="cu-ere">Con trỏ chuột dạng e-resize</span></li>
+           <li><code><b>help</b></code>:&emsp;<span id="cu-hel">Con trỏ chuột dạng help</span></li>
+           <li><code><b>move</b></code>:&emsp;<span id="cu-mov">Con trỏ chuột dạng move</span></li>
+           <li><code><b>n-resize</b></code>:&emsp;<span id="cu-nre">Con trỏ chuột dạng n-resize</span></li>
+           <li><code><b>ne-resize</b></code>:&emsp;<span id="cu-ner">Con trỏ chuột dạng ne-resize</span></li>
+           <li><code><b>none</b></code>:&emsp;<span id="cu-non">Con trỏ dạng none</span></li>
+           <li><code><b>nw-resize</b></code>:&emsp;<span id="cu-nwr">Con trỏ chuột dạng nw-resize</span></li>
+           <li><code><b>pointer</b></code>:&emsp;<span id="cu-poi">Con trỏ chuột dạng pointer</span></li>
+           <li><code><b>progress</b></code>:&emsp;<span id="cu-pro">Con trỏ chuột dạng progress</span></li>
+           <li><code><b>s-resize</b></code>:&emsp;<span id="cu-sre">Con trỏ chuột dạng s-resize</span></li>
+           <li><code><b>se-resize</b></code>:&emsp;<span id="cu-ser">Con trỏ chuột dạng se-resize</span></li>
+           <li><code><b>sw-resize</b></code>:&emsp;<span id="cu-swr">Con trỏ chuột dạng sw-resize</span></li>
+           <li><code><b>text</b></code>:&emsp;<span id="cu-tex">Con trỏ chuột dạng text</span></li>
+           <li><code><b>w-resize</b></code>:&emsp;<span id="cu-wre">Con trỏ chuột dạng w-resize</span></li>
+           <li><code><b>wait</b></code>:&emsp;<span id="cu-wai">Con trỏ chuột dạng wait</span></li>
+        </ul>
+        <li><code><b>direction</b></code>:&emsp;<i>Xác định hướng cho văn bản</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    direction: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="dir-ltr">Hướng văn bản từ trái sang phải, đây là kiểu mặc định của <code><b>direction</b></code></div>
+            <div id="dir-rtl">Hướng văn bản từ phải sang trái</div>
+        </ul>
+        <li><code><b>display</b></code>:&emsp;<i>Xác định loại hiển thị của thành phần</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    display: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Các thuộc tính:</u></b>
+        <ul>
+            <li><code><b>block</b></code>:&emsp;Thành phần hiển thị như <span id="dis-blo">một khối</span> thành phần sẽ đứng một hàng độc lập so với thành phần trước và sau nó</li>
+            <li><code><b>inline</b></code>:&emsp;Thành phần sẽ hiển thị như một <span id="dis-in">nội tuyến</span>, đây là dạng mặc định</li>
+            <li><code><b>inline-block</b></code>:&emsp;Thành phần sẽ hiển thị như một khối <span id="dis-inb">nhưng</span> là một khối nội tuyến</li>
+            <li><code><b>list-item</b></code>:&emsp;Thành phần sẽ hiển thị như <span id="dis-lit">một khối</span> và một nội tuyến cho các điểm đánh dấu danh sách</li>
+            <li><code><b>none</b></code>:&emsp;Thành phần không <span id="dis-no">hiển</span> thị</li>
+        </ul>
+        <li><code><b>empty-cells</b></code>:&emsp;<i>Xác định có hay không có đường viền và nền trong một cột rỗng của <code>&lt;<b>table</b>&gt;</code></i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    empty-cells: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+           <table border="1" id="emp-cel">
+               <tr>
+                   <th>Thứ hai</th>
+                   <th>Thứ ba</th>
+               </tr>
+               <tr>
+                   <td>2000đ</td>
+                   <td></td>
+               </tr>
+               <tr>
+                   <td>500đ</td>
+                   <td>400đ</td>
+               </tr>
+           </table>
+        </ul>
+        <li><code><b>float</b></code>:&emsp;<i>Xác định có hay không một thành phần được float</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    float: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div class="flo-lef">Float left</div>
+            <div class="flo-lef">Float left</div>
+        </ul>
+        <br>
+        <li><code><b>font</b></code>:&emsp;<i>Thiết lập font cho thành phần, bao gồm font chữ, độ rộng,...</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    font: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Các thuộc tính:</u></b>
+        <ul>
+            <li><code><b>font-family</b></code>:&emsp;<span id="fon-fa">Xác định font family cho chữ</span></li>
+            <li><code><b>font-size</b></code>:&emsp;<span id="fon-siz">Xác định kích cỡ cho chữ</span></li>
+            <li><code><b>font-style</b></code>:&emsp;<span id="fon-sty">Xác định loại cho chữ</span></li>
+            <li><code><b>font-variant</b></code>:&emsp;Chuyển đổi kiểu chữ (<span id="fon-var">thường thành hoa</span>)</li>
+            <li><code><b>font-weight</b></code>:&emsp;Chuyển đổi kiểu chữ (<span id="fon-wei">thường thành in đậm</span>)</li>
+        </ul>
+        <li><code><b>height</b></code>:&emsp;<i>Thiết lập chiều cao của thành phần</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    height: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="hei">Nguyễn Phước Thịnh</div>
+        </ul>
+        <li><code><b>left</b></code>:&emsp;<i>Xác định vị trí bên trái của thành phần định vị trí (như <code><b>postion</b></code>)</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    left: value;<br>
+                }
+            </code>
+        </ul>
+        <ul><li>Thuộc tính <code><b>left</b></code> sẽ không có tác dụng khi <code><b>postion</b></code> có giá trị là <code><b>static</b></code></li></ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="lef">Đây là tag <code>&lt;<b>div</b>&gt;</code> có vị trí bên trái (left)</div>
+        </ul>
+        <li><code><b>letter-spacing</b></code>:&emsp;<i>Tăng hoặc giảm khoảng cách giữa các ký tự trong đoạn text</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    letter-spacing: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <span id="let-spa">Nguyễn Phước Thịnh</span>
+        </ul>
+        <li><code><b>line-height</b></code>:&emsp;<i>Thiết lập chiều cao giữa các dòng</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    line-height: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="lin-hei">
+                HTML - HyperText Markup Language<br>
+                XHTML - Extensible HyperText Markup Language<br>
+                CSS - Cascading Style Sheets<br>
+                JS - JavaScript
+            </div>
+        </ul>
+        <li><code><b>list-style</b></code>:&emsp;<i>Thiết lập tất cả thuộc tính cho một danh sách trong một khai báo</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    list-style: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Các thuộc tính:</u></b>
+        <ul>
+            <li id="lis-ima"><code><b>list-style-image</b></code>:&emsp;Thay thế các mục của danh sách bằng hình ảnh</li>
+            <li><code><b>list-style-postion</b></code>:&emsp;Xác định các mục nằm bên trong nội dung</li>
+            <ul>
+                <li id="lis-out">Outside</li>
+                <li id="lis-in">Inside</li>
+            </ul>
+            <li><code><b>list-style-type</b></code>:&emsp;Xác định loại cho danh sách</li>
+            <b><u>Các loại danh sách:</u></b>
+            <ul>
+                <li id="lis-cir">Circle</li>
+                <li id="lis-cjk">Cjk-Ideographic</li>
+                <li id="lis-dec">Decimal</li>
+                <li id="lis-dlz">Decimal-Leading-Zero</li>
+                <li id="lis-dis">Disc</li>
+                <li id="lis-geo">Georgian</li>
+                <li id="lis-hir">Hiragana</li>
+                <li id="lis-loa">Lower-Alpha</li>
+                <li id="lis-log">Lower-Greek</li>
+                <li id="lis-lol">Lower-Latin</li>
+                <li id="lis-lor">Lower-Roman</li>
+                <li id="lis-non">None</li>
+                <li id="lis-squ">Square</li>
+                <li id="lis-upa">Upper-Alpha</li>
+                <li id="lis-upl">Upper-Latin</li>
+                <li id="lis-upr">Upper-Roman</li>
+            </ul>
+        </ul>
+        <li><code><b>margin</b></code>:&emsp;<i>Thiết lập các thuộc tính <code><b>margin</b></code> trong một khai báo</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    margin: value;<br>
+                }
+            </code>
+        </ul>
+        <ul>
+            <li><b>4 thành phần</b>:&emsp;<code>top right bottom left</code></li>
+            <li><b>3 thành phần</b>:&emsp;<code>top (right left) bottom</code></li>
+            <li><b>2 thành phần</b>:&emsp;<code>(top bottom) (right left)</code></li>
+            <li><b>1 thành phần</b>:&emsp;<code>(top right bottom left)</code></li>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="mar"><p>Nguyễn Phước Thịnh</p></div>
+        </ul>
+        <li><code><b>max-height</b></code>:&emsp;<i>Thiết lập chiều cao tối đa của thành phần</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    max-height: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul id="max-ul">
+            <div id="max-hei">
+                Tham khảo HTML4<br>
+                Tham khảo HTML5<br>
+                Tham khảo CSS2<br>
+                Tham khảo CSS3<br>
+                Tham khảo Jquery
+            </div>
+        </ul>
+        <li><code><b>max-width</b></code>:&emsp;<i>Thiết lập chiều rộng tối đa của thành phần</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    max-width: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="max-wid">Đoạn text này có chiều rộng lớn nhất là 120px</div>
+        </ul>
+        <li><code><b>min-height</b></code>:&emsp;<i>Thiết lập chiều cao tối thiểu của thành phần</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    min-height: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="min-hei">
+                Tham khảo HTML4<br>
+                Tham khảo HTML5<br>
+                Tham khảo CSS2<br>
+                Tham khảo CSS3<br>
+                Tham khảo Jquery
+            </div>
+        </ul>
+        <li><code><b>min-width</b></code>:&emsp;<i>Thiết lập chiều rộng tối thiểu của thành phần</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    min-width: value;<br>
+                }
+            </code>
+            <li>Khi nội dung mở rộng thì chiều rộng của box được tăng thêm, nhưng khi nội dung thu hẹp thì giá trị chiều rộng nhỏ nhất sẽ bằng với giá trị <code><b>min-width</b></code>, chiều rộng này không thể nhỏ hơn giá trị <code><b>min-width</b></code></li>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="min-wid">Đoạn text này có chiều rộng tối thiểu là 200px</div>
+        </ul>
+        <li><code><b>outline</b></code>:&emsp;<i>Định dạng các đường viền bao ngoài</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    outline: value;<br>
+                }
+            </code>
+            <li>Các thuộc tính tương tự như của <code><b>border</b></code></li>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <span id="out">Nguyễn Phước Thịnh</span>
+        </ul>
+        <li><code><b>overflow</b></code></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    overflow: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="over">
+                Nguyễn Phước Thịnh<br>
+                HTML4<br>
+                HTML5<br>
+                XHTML<br>
+                CSS2<br>
+                CSS3<br>
+                Jquery<br>
+                JavaScript<br>
+                PHP
+            </div>
+        </ul>
+        <li><code><b>padding</b></code>:&emsp;<i>Thiết lập các thuộc tính <code><b>padding</b></code> trong một khai báo</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    padding: value;<br>
+                }
+            </code>
+            <li>Các thuộc tính tương tự như của <code><b>margin</b></code></li>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="pad">Nguyễn Phước Thịnh</div>
+        </ul>
+        <li><code><b>page-break-after</b></code>:&emsp;<i>Xác định các phân chia văn bản ngay sau thành phần</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    page-break-after: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div>Nguyễn Phước Thịnh</div>
+            <div id="pag-aft">Nguyễn Phước Thịnh</div>
+        </ul>
+        <li><code><b>page-break-before</b></code>:&emsp;<i>Xác định các phân chia văn bản ngay trước thành phần</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    page-break-before: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div>Nguyễn Phước Thịnh</div>
+            <div id="pag-bef">Nguyễn Phước Thịnh</div>
+        </ul>
+        <li><code><b>page-break-inside</b></code>:&emsp;<i>Xác định các phân chia văn bản ngay bên trong thành phần</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    page-break-inside: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div>Nguyễn Phước Thịnh</div>
+            <div id="pag-ins">Nguyễn Phước Thịnh</div>
+        </ul>
+        <li><code><b>position</b></code>:&emsp;<i>Xác định loại của phương pháp định vị trí cho thành phần</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    position: value;<br>
+                }
+            </code>
+            <li><code><b>static</b></code>:&emsp;Thành phần sẽ nằm theo thứ tự trong văn bản, đây là dạng mặc định</li>
+            <li><code><b>relative</b></code>:&emsp;Định vị trí tuyệt đối cho thành phần</li>
+            <li><code><b>absolute</b></code>:&emsp;Định vị trí tuyệt đối cho thành phần theo thành phần bao ngoài (thành phần định vị trí tương đối <code><b>position: relative</b>;</code>) hoặc theo cửa sổ trình duyệt</li>
+            <li><code><b>fixed</b></code>:&emsp;Định vị trí tương đối cho thành phần theo cửa sổ trình duyệt</li>   
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="pos"><span>Nguyễn Phước Thịnh</span></div>
+        </ul>
+        <i><code><b>quotes</b></code>:&emsp;<i>Thiết lập các loại dấu ngoặc bao ngoài khi nhúng một trích dẫn</i></i>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    quotes: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <q id="quo">Nguyễn Phước Thịnh</q>
+        </ul>
+        <li><code><b>right</b></code>:&emsp;<i>Xác định vị trí bên phải của thành phần định vị trí (như <code><b>position</b></code>)</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    right: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="rig"><span>Đây là tag <code><b>span</b></code> có vị trí bên phải (<code><b>right</b></code>)</span></div>
+        </ul>
+        <li><code><b>table-layout</b></code>:&emsp;<i>Thiết lập các thuật toán layout được sử dụng cho table</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                table {<br>
+                    table-layout: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <table id="tab-lay" border="1">
+                <tr>
+                    <th width="30%">Thứ hai</th><th>Thứ ba</th>
+                </tr>
+                <tr>
+                    <td>2000đ</td><td>5000đ</td>
+                </tr>
+                <tr>
+                    <td>500đ</td><td>4000đ</td>
+                </tr>
+            </table>
+        </ul>
+        <li><code><b>text-align</b></code>:&emsp;<i>Sắp xếp nội dung theo chiều ngang</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    text-align: value;<br>
+                }
+            </code>
+            <li><code><b>left</b></code>:&emsp;Sắp nội dung theo chiều ngang nằm về bên trái, đây là dạng mặc định</li>
+            <li><code><b>right</b></code>:&emsp;Sắp nội dung theo chiều ngang nằm về bên phải</li>
+            <li><code><b>center</b></code>:&emsp;Sắp nội dung theo chiều ngang nằm giữa</li>
+            <li><code><b>justify</b></code>:&emsp;Sắp nội dung cho các dòng có chiều rộng bằng nhau</li>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="tex-ali"><code><b>Text align justify</b></code>: Sắp xếp nội dung cho các dòng có chiều rộng bằng nhau, điều này có nghĩa là trình duyệt sẽ tự động canh đều các dòng nội dung sao cho tất cả các dòng nội dung đều có cùng chiều rộng</div>
+        </ul>
+        <li><code><b>text-decoration</b></code>:&emsp;<i>Xác định các trang trí thêm cho text</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    text-decoration: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Các thuộc tính:</u></b>
+        <ul>
+            <li><code><b>underline</b></code>:&emsp;<span id="tede-und">Xác định đường gạch dưới văn bản</span></li>
+            <li><code><b>overline</b></code>:&emsp;<span id="tede-ove">Xác định đường gạch bên trên văn bản</span></li>
+            <li><code><b>line-through</b></code>:&emsp;<span id="tede-lit">Xác định đường gạch ngang văn bản</span></li>
+            <li><code><b>blink</b></code>:&emsp;<span id="tede-bli">Xác định văn bản nhấp nháy</span></li>
+        </ul>
+        <li><code><b>text-indent</b></code>:&emsp;<i>Ghi rõ thụt đầu dòng của dòng đầu tiên trong một khối văn bản</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    text-indent: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="tex-ind">Đây là dòng đầu có sử dụng <code><b>text-indent</b></code>, có hiệu ứng đối với dòng đầu tiên trong văn bản, khác với <code><b>padding</b></code> có hiệu ứng với toàn bộ văn bản</div>
+        </ul>
+        <li><code><b>text-transform</b></code>:&emsp;<i>Thiết lập các ký tự viết hoa cho văn bản</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    text-transform: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Các thuộc tính:</u></b>
+        <ul>
+            <li><code><b>capitalize</b></code>:&emsp;<span id="tetr-cap">Chữ đầu tiên của mỗi thành phần là chữ hoa</span></li>
+            <li><code><b>uppercase</b></code>:&emsp;<span id="tetr-upp">Tất cả chữ trong văn bản thành chữ hoa</span></li>
+            <li><code><b>lowercase</b></code>:&emsp;<span id="tetr-low">Tất cả chữ trong văn bản thành chữ thường</span></li>
+        </ul>
+        <li><code><b>top</b></code>:&emsp;<i>Xác định vị trí bên trên của thành phần định vị trí (như <code><b>position</b></code>)</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    top: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="top"><span>Đây là tag <code><b>span</b></code> có vị trí bên trên (<code><b>top</b></code>)</span></div>
+        </ul>
+        <li><code><b>vertical-align</b></code>:&emsp;<i>Sắp xếp các nội dung theo chiều dọc</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    vertical-align: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Các thuộc tính:</u></b>
+        <ul>
+            <li><code><b>sub</b></code>:&emsp;Canh lề thành phần giống như sử dụng <span id="vea-sub"><code><b>subscript</b></code></span></li>
+            <li><code><b>super</b></code>:&emsp;Canh lề thành phần giống như sử dụng <span id="vea-supr"><code><b>superscript</b></code></span></li>
+            <li><code><b>top</b></code>:&emsp;Canh phần <span id="vea-top">trên cùng</span> của thành phần theo phần trên cao nhất của các thành phần trong cùng hàng</li>
+            <li><code><b>text-top</b></code>:&emsp;Canh phần <span id="vea-ttop">trên cùng</span> của thành phần theo phần trên cùng cao nhất của text ủa thành phần bao ngoài</li>
+            <li><code><b>middle</b></code>:&emsp;Thành phần sẽ được <span id="vea-mid">canh giữa</span> theo thành phần bao ngoài</li>
+            <li><code><b>bottom</b></code>:&emsp;Canh phần <span id="vea-bot">dưới cùng</span> của thành phần theo phần dưới cùng thấp nhất của các thành phần trong cùng hàng</li>
+            <li><code><b>text-bottom</b></code>:&emsp;Canh phần <span id="vea-tbot">dưới cùng</span> của thành phần theo phần dưới cùng thấp nhất của text của thành phần bao ngoài</li>
+            <li><code><b>XXpx</b></code>:&emsp;Xác định khoảng cách cho thành phần theo <span id="vea-pos">số dương</span> hoặc <span id="vea-neg">số âm</span></li>
+        </ul>
+        <li><code><b>visibility</b></code>:&emsp;<i>Xác định thành phần có được nhìn thấy hay không</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    visibility: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div>Nguyễn Phước Thịnh</div>
+            <div>HTML</div>
+            <div id="vis">CSS</div>
+            <div>Jquery</div>
+        </ul>
+        <li><code><b>white-space</b></code>:&emsp;<i>Xác định khoảng trắng có bên trong thành phần được xử lý như thế nào</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    white-space: value;<br>
+                }
+            </code>
+            <li><code><b>nowrap</b></code>:&emsp;Văn bản sẽ hiển thị trên cùng một hàng, chỉ xuống hàng khi gặp thẻ <code>&lt;<b>br</b>&gt;</code></li>
+            <li><code><b>pre</b></code>:&emsp;Khoảng trắng sẽ do trình duyệt điều khiển, văn bản sẽ hiển thị trên cùng một hàng, chỉ ngắt dòng tại đoạn văn bản sử dụng thẻ <code>&lt;<b>pre</b>&gt;</code></li>
+            <li><code><b>pre-wrap</b></code>:&emsp;Khoảng trắng sẽ do trình duyệt điều khiển, văn bản sẽ tự động bao lại khi cần thiết, và xuống hàng</li>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="whi-spa">Đây là đoạn text có chiều dài hai dòng, chúng ta sẽ sử dụng đoạn text này để dùng làm ví dụ cho <span>thuộc tính <code><b>white-space</b></code></span></div>
+        </ul>
+        <li><code><b>width</b></code>:&emsp;<i>Thiết lập chiều rộng của thành phần</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    width: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="wid">Nguyễn Phước Thịnh</div>
+        </ul>
+        <li><code><b>word-spacing</b></code>:&emsp;<i>Tăng hoặc giảm không gian giữa các từ trong đoạn văn bản</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    word-spacing: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <span id="wor-spa">Nguyễn Phước Thịnh</span>
+        </ul>
+        <li><code><b>z-index</b></code>:&emsp;<i>Thiết lập thứ tự xếp chồng nhau của một thành phần vị trí</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag {<br>
+                    z-index: value;<br>
+                }
+            </code>
+            <li>Thứ tự chồng nhau được sắp xếp dựa theo giá trị số, thành phần HTML nào có chỉ số <code><b>z-index</b></code> cao hơn sẽ nằm trên, ngược lại sẽ nằm dưới, giá trị mặc định là 0</li>
+            <li>Có thể sử dụng số âm</li>
+            <li>Giá trị tốt nhất là không sử dụng đơn vị</li>
+            <li><code><b>z-index</b></code> chỉ làm việc cùng với thuộc tính <code><b>position</b></code></li>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div id="zin-bor">
+                <span id="zin-el1">Thành phần 01</span>
+                <span id="zin-el2">Thành phần 02</span>
+            </div>
+        </ul>
+    </ul>
+    <p align="right"><a href="#">Về đầu trang</a></p>
+    <h2>Đối tác:</h2>
+    <hr>
+    <marquee scrollamount="10" behavior="scroll"> <!--onmouseover="this.stop()" onmouseout="this.start()"-->
+        <a class="non-a" href="http://www.intel.vn/content/www/vn/vi/homepage.html" title="Intel" target="_blank"><img src="http://vignette3.wikia.nocookie.net/egamia/images/f/f3/Intel_logo.png/revision/latest?cb=20061005221757" width="150px"></a>
+        &emsp;
+        <a class="non-a" ref="https://www.mastercard.us/en-us.html" title="Mastercard" target="_blank"><img src="http://logodatabases.com/wp-content/uploads/2012/03/mastercard-logo-png.png" width="150px"></a>
+        &emsp;
+        <a class="non-a" href="http://www.nvidia.com/download/index.aspx" title="Nvidia" target="_blank"><img src="http://vignette1.wikia.nocookie.net/logopedia/images/3/38/Nvidia_logo.png/revision/latest?cb=20120829072950" width="150px"></a>
+        &emsp;
+        <a class="non-a" href="http://www.kfcvietnam.com.vn/vn/stores" title="KFC" target="_blank"><img src="http://www.logospike.com/wp-content/uploads/2014/11/Kfc_logo-5.png" width="150px"></a>
+        &emsp;
+        <a class="non-a" href="http://vietnamese.att.com/vietnamese/home.html" title="at&t" target="_blank"><img src="http://vignette1.wikia.nocookie.net/logopedia/images/6/69/AT%26T_logo_2005.png/revision/latest?cb=20100628142135" width="150px"></a>
+        &emsp;
+        <a class="non-a" href="https://honda.com.vn/" title="Honda" target="_blank"><img src="http://www.logospike.com/wp-content/uploads/2014/11/Honda_logo-2.jpg" width="100px"></a>
+        &emsp;
+        <a class="non-a" href="https://www.ford.com.vn/?bannerid=CPC_010216_VNMKTPBSEMad_textFord&C2Ccode=CPC_010216_VNMKTPBSEMad_textFord" title="Ford" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/nah/b/bd/Ford_logo.png" width="150px"></a>
+        &emsp;
+        <a class="non-a" href="http://www.cartoonnetwork.com/games/" title="CN" target="_blank"><img src="http://vignette4.wikia.nocookie.net/toonami/images/f/f7/CN_Logo.png/revision/latest?cb=20130521010756" width="150px"></a>
+    </marquee>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>Build Website PT.9E | Cấu trúc &amp; Các lệnh trong CSS3</title>
+	<meta name="keywords" content="HTML,CSS,XHTML,JavaScript" />
+    <meta name="author" content="PT.9E" />
+    <link href="image/home-icon.png" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="main_css-3.css" />
+</head>
+
+<body>
+    <h1 align="center">Cấu trúc &amp; Các lệnh trong CSS3</h1>
+    <hr />
+    <a href="index.html" target="_blank">HTML</a>
+    <a href="text_css-3.2.html" target="_blank" id="tag-lik">CSS3.2</a>
+    <hr />
+    <h2 align="left">1. Bộ chọn CSS3:</h2>
+    <ul>
+        <li><code><b>tag01~tag02</b></code>:&emsp;<i>Chọn tất cả thành phần 02 khi có thành phần 01 ở trước</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                tag01~tag02 {<br>
+                    property: value;<br>
+                }
+            </code>
+            <li>Cả thành phần <code>&lt;<b>tag01</b>&gt;</code> và <code>&lt;<b>tag02</b>&gt;</code> nên cùng cấp với nhau, cùng nằm trong thành phần cha (khác cấp sẽ không có tác dụng)</li>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul class="tgtg">
+            <div>div trước thành phần ul</div>
+            <ul><li>Thành phần ul</li></ul>
+            <div>div sau thành phần ul</div>
+            <span><div>div sau thành phần ul nhưng khác cấp</div></span>
+            <div>div sau thành phần ul</div>
+        </ul>
+        <li><code>[<b>attribute^=value</b>]</code>:&emsp;<i>Chọn tất cả thành phần với thuộc tính có giá trị bắt đầu bằng <code>"<b>value</b>"</code></i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                [attribute^=value] {<br>
+                    property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul id="attr-h">
+            <div id="test">test</div>
+            <div id="first_test">first_test</div>
+            <div id="first-test">first-test</div>
+            <div id="firsttest">firsttest</div>
+            <div id="test_last">test_last</div>
+            <div id="test-last">test-last</div>
+            <div id="testlast">testlast</div>
+        </ul>
+        <li><code>[<b>attribute$=value</b>]</code>:&emsp;<i>Chọn tất cả thành phần với thuộc tính có giá trị kết thúc bằng <code>"<b>value</b>"</code></i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                [atrribute$=value] {<br>
+                    property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul id="attr-e">
+            <div id="test">test</div>
+            <div id="first_test">first_test</div>
+            <div id="first-test">first-test</div>
+            <div id="firsttest">firsttest</div>
+            <div id="test_last">test_last</div>
+            <div id="test-last">test-last</div>
+            <div id="testlast">testlast</div>
+        </ul>
+        <li><code>[<b>atrribute*=value</b>]</code>:&emsp;<i>Chọn tất cả thành phần với thuộc tính có giá trị đặc biệt bằng <code>"<b>value</b>"</code></i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                [atribute*=value] {<br>
+                    property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul id="attr-s">
+            <div id="test">test</div>
+            <div id="first_test">first_test</div>
+            <div id="first-test">first-test</div>
+            <div id="firsttest">firsttest</div>
+            <div id="test_last">test_last</div>
+            <div id="test-last">test-last</div>
+            <div id="testlast">testlast</div>
+            <div>none</div>
+        </ul>
+        <li><code>:<b>first-of-type</b></code>:&emsp;<i>Chọn thành phần con đầu tiên hoặc duy nhất trong các thành phần cha</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                :first-of-type {<br>
+                    property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul id="attr-fo">
+            <span>span tự do đầu tiên</span>
+            <div>
+                <ul>
+                    <li><span>span duy nhất của li</span></li>
+                    <li><span>span duy nhất của li</span></li>
+                </ul>
+                <span>span đầu tiên của div</span><br>
+                <span>span thứ 2 của div</span>
+                <ul>
+                    <li>
+                        <span>span đầu tiên của li</span><br>
+                        <span>span thứ 2 của li</span>
+                    </li>
+                </ul>
+                <span>span thứ 3 của div</span><br>
+                <span>span cuối cùng của div</span>
+            </div>
+            <span>span tự do thứ 2</span><br>
+            <span>span tự do cuối cùng</span>
+        </ul>
+        <li><code>:<b>last-of-type</b></code>:&emsp;<i>Chọn thành phần con cuối cùng hoặc duy nhất trong thành phần cha</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                :last-of-type {<br>
+                    property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul id="attr-lo">
+            <span>span tự do đầu tiên</span>
+            <div>
+                <ul>
+                    <li><span>span duy nhất của li</span></li>
+                    <li><span>span duy nhất của li</span></li>
+                </ul>
+                <span>span đầu tiên của div</span><br>
+                <span>span thứ 2 của div</span>
+                <ul>
+                    <li>
+                        <span>span đầu tiên của li</span><br>
+                        <span>span thứ 2 của li</span>
+                    </li>
+                </ul>
+                <span>span thứ 3 của div</span><br>
+                <span>span cuối cùng của div</span>
+            </div>
+            <span>span tự do thứ 2</span><br>
+            <span>span tự do cuối cùng</span>
+        </ul>
+        <li><code>:<b>only-of-type</b></code>:&emsp;<i>Chọn thành phần con trong các thành phần cha, khi thành phần cha có một thành phần con là chính nó. Trong các thành phần cha có thể chứa nhiều thành phần con, tuy nhiên thành phần con được chọn phải là duy nhất, không được có từ 2 trở lên</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                :only-of-type {<br>
+                    property: value;<br>
+                }
+            </code>
+        </ul>
+        <ul id="attr-oo">
+            <span>span tự do đầu tiên</span>
+            <div>
+                <ul>
+                    <li>
+                        <span>span duy nhất của li</span>
+                        <div>div duy nhất của li</div>
+                    </li>
+                    <li><span>span duy nhất của li</span></li>
+                </ul>
+                <span>span đầu tiên của div</span><br>
+                <span>span thứ 2 của div</span>
+                <ul>
+                    <li>
+                        <span>span đầu tiên của li</span><br>
+                        <span>span thứ 2 của li</span>
+                    </li>
+                </ul>
+                <span>span thứ 3 của div</span><br>
+                <span>span cuối cùng của div</span>
+            </div>
+            <span>span tự do thứ 2</span><br>
+            <span>span tự do cuối cùng</span>
+        </ul>
+        <li><code>:<b>only-child</b></code>:&emsp;<i>Chọn thành phần con trong các thành phần cha, khi thành phần cha có mooic thành phần con là chính nó, không được chứa thành phần con khác. Chỉ chọn thành phần có thành phần cha, những thành phần độc lập sẽ không được chọn</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <code>
+                :only-child {<br>
+                    property: value;<br>
+                }
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul id="on-ch">
+            <span>span tự do đầu tiên</span>
+            <div>
+                <ul>
+                    <li>
+                        <span>span duy nhất của li</span>
+                        <div>div duy nhất của li</div>
+                    </li>
+                    <li><span>span duy nhất của li, không chứa thành phần khác</span></li>
+                </ul>
+                <span>span đầu tiên của div</span><br>
+                <span>span thứ 2 của div</span>
+                <ul>
+                    <li>
+                        <span>span đầu tiên của li</span><br>
+                        <span>span thứ 2 của li</span>
+                    </li>
+                </ul>
+                <span>span thứ 3 của div</span><br>
+                <span>span cuối cùng của div</span>
+            </div>
+            <span>span tự do thứ 2</span><br>
+            <span>span tự do cuối cùng</span>
+        </ul>
+        <li><code>:<b>nth-child(n)</b></code>:&emsp;<i>Chọn thành phần thứ <code>"<b>n</b>"</code> trong thành phần cha. Chỉ chọn thành phần có thành phần cha, những thành phần độc lập sẽ không được chọn</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                :nth-child(n) {<br>
+                    property: value;<br>
+                }
+            </code>
+            <li>Thứ tự <code>"<b>n</b>"</code> được tính cho tất cả các thành phần cùng cấp</li>
+            <li>Giá trị <code>"<b>n</b>"</code> có thể là số, keyword hay công thức</li>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul id="nth-ch">
+            <span>Thành phần độc lập thứ nhất</span><br>
+            <span>Thành phần độc lập thứ 2</span><br>
+            <span>Thành phần độc lập thứ 3</span>
+            <div>
+                <span>Thành phần thứ nhất</span><br>
+                <span>Thành phần thứ 2</span><br>
+                <span>Thành phần thứ 3</span>
+            </div>
+            <div>
+                <div>Thành phần thứ nhất</div>
+                <span>Thành phần thứ 2</span><br>
+                <span>Thành phần thứ 3</span>
+            </div>
+            <div>
+                <ul>
+                    <li>ul cùng cấp với span, nên tất cả li bên trong đều được coi là thành phần thứ nhất</li>
+                    <li>ul cùng cấp với span, nên tất cả li bên trong đều được coi là thành phần thứ nhất</li>
+                </ul>
+                <span>Thành phần thứ 2</span><br>
+                <span>Thành phần thứ 3</span>
+            </div>
+        </ul>
+        <li><code>:<b>nth-last-child(n)</b></code>:&emsp;<i>Chọn thành phần thứ <code>"<b>n</b>"</code> tính từ thành phần cuối trong thành phần cha. Chỉ chọn thành phần có thành phần cha, những thành phần độc lập sẽ không được chọn</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                :nth-last-child(n) {<br>
+                    property: value;<br>
+                }
+            </code>
+            <li>Thứ tự <code>"<b>n</b>"</code> được tính cho tất cả các thành phần cùng cấp</li>
+            <li>Giá trị <code>"<b>n</b>"</code> có thể là số, keyword hay công thức</li>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul id="nth-lach">
+            <div>
+                <span>Thành phần thứ nhất</span><br>
+                <span>Thành phần thứ 2</span><br>
+                <span>Thành phần thứ 3</span>
+            </div>
+            <div>
+                <div>Thành phần thứ nhất</div>
+                <span>Thành phần thứ 2</span><br>
+                <span>Thành phần thứ 3</span>
+            </div>
+            <div>
+                <ul>
+                    <li>ul cùng cấp với span, nên tất cả li bên trong đều được coi là thành phần thứ nhất</li>
+                    <li>ul cùng cấp với span, nên tất cả li bên trong đều được coi là thành phần thứ nhất</li>
+                </ul>
+                <span>Thành phần thứ 2</span><br>
+                <span>Thành phần thứ 3</span>
+            </div>
+            <span>Thành phần độc lập thứ nhất</span><br>
+            <span>Thành phần độc lập thứ 2</span><br>
+            <span>Thành phần độc lập thứ 3</span>
+        </ul>
+        <li><code><b>:nth-of-type(n)</b></code>:&emsp;<i>Chọn thành phần thứ <code>"<b>n</b>"</code>, gốc tính được từ thành phần đầu tiên trở đi</i></li>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                :nth-of-type(n) {<br>
+                property: value;<br>
+                }
+            </code>
+            <li>Thứ tự <code>"<b>n</b>"</code> được tính cho tất cả các thành phần cùng cấp</li>
+            <li>Giá trị <code>"<b>n</b>"</code> có thể là sô, keyword hay công thức</li>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul id="nth-ofty">
+            <div>
+                <span>Thành phần thứ nhất</span><br>
+                <span>Thành phần thứ 2</span><br>
+                <span>Thành phần thứ 3</span>
+            </div>
+            <div>
+                <div>Thành phần thứ nhất</div>
+                <span>Thành phần thứ 2</span><br>
+                <span>Thành phần thứ 3</span>
+            </div>
+            <div>
+                <ul>
+                    <li>ul cùng cấp với span, nên tất cả li bên trong đều được coi là thành phần thứ nhất</li>
+                    <li>ul cùng cấp với span, nên tất cả li bên trong đều được coi là thành phần thứ nhất</li>
+                </ul>
+                <span>Thành phần thứ 2</span><br>
+                <span>Thành phần thứ 3</span>
+            </div>
+            <span>Thành phần độc lập thứ nhất</span><br>
+            <span>Thành phần độc lập thứ 2</span><br>
+            <span>Thành phần độc lập thứ 3</span>
+        </ul>
+
+        
+        
+    </ul>
+    <p align="right"><a href="#">Về đầu trang</a></p>
+</body>
+</html>

@@ -1,0 +1,71 @@
+#tag {
+	color: red;
+}
+#tag-in p {
+	color: red;
+}
+#tag-and-1,#tag-and-2 {
+	color: red;
+}
+#tag-after+.tag-after-c {
+	color: red;
+}
+#tag-child>p.tag-child-c {
+	color: red;
+}
+#tag-active:link {
+	text-decoration: none;
+}
+#tag-active:active {
+	color: pink;
+	background: red;
+	text-decoration: none;
+}
+#tag-af:after {
+	content: ": Nguyễn Phước Thịnh";
+}
+#tag-be:before {
+	content: "NTP";
+}
+#tag-st p:first-child {
+	color: red;
+}
+#tag-le p:first-letter {
+	color: red;
+}
+#tag-li p:first-line {
+	color: red;
+}
+#tag-fo:focus {
+	background: red;
+	color: pink;
+}
+#tag-ho:link {
+	text-decoration: none;
+}
+#tag-ho:hover {
+	background: red;
+	color: pink;
+}
+.tag-la:lang(vi) {
+	color: red;
+}
+#tag-lik:link {
+	color: red;
+	text-decoration: none;
+}
+#tag-vi:visited {
+	color: brown;
+}
+.tag-tht[target] {
+	color: red;
+}
+.tag-tla[lang|=vi] {
+	color: red;
+}
+[title~=tag-ti] {
+	border: 5px solid yellow;
+}
+.tag-thg[target=_blank] {
+	color: red;
+}

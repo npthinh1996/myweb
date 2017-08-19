@@ -1,0 +1,43 @@
+.tgtg ul~div {
+    color: blue;
+}
+
+#attr-h div[id^=test] {
+    color: blue;
+}
+
+#attr-e div[id$=test] {
+    color: blue;
+}
+
+#attr-s div[id*=test] {
+    color: blue;
+}
+
+#attr-fo span:first-of-type {
+    color: blue;    
+}
+
+#attr-lo span:last-of-type {
+    color: blue;
+}
+
+#attr-oo span:only-of-type {
+    color: blue;
+}
+
+#on-ch span:only-child {
+    color: blue;
+}
+
+#nth-ch span:nth-child(2) {
+    color: blue;
+}
+
+#nth-lach span:nth-last-child(1) {
+    color: blue;
+}
+
+#nth-ofty span:nth-of-type(1) {
+    color: blue;
+}

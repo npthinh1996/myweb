@@ -1,0 +1,552 @@
+#bagr {
+    background: yellow;
+}
+.in-line {
+    line-height: 1.75;
+}
+#bo-dot {
+    border: 3px dotted red;
+}
+#bo-das {
+    border: 3px dashed blue;
+}
+#bo-sol {
+    border: 3px solid red;
+}
+#bo-dou {
+    border: 3px double blue;
+}
+#bo-gro {
+    border: 3px groove red;
+}
+#bo-rid {
+    border: 3px ridge blue;
+}
+#bo-in {
+    border: 3px inset red;
+}
+#bo-out {
+    border: 3px outset blue;
+}
+#bo-inh {
+    border: 3px inherit red;
+}
+table#col-tal {
+    border-collapse: collapse;
+}
+table#spa-tal {
+    border-spacing: 10px 5px;
+}
+#bot {
+    border: 2px solid red;
+    height: 100px;
+    width: 50%;
+    position: relative;
+}
+#bot p {
+    position: absolute;
+    bottom: 10px;
+}
+#cap-si caption {
+    caption-side: bottom;
+}
+#clr-fl {
+    float: left;
+}
+#clr {
+    clear: left;
+}
+#clp img{
+    position: absolute;
+    clip: rect(40px, 106px, 73px, 21px);
+}
+#colr {
+    color: red;
+}
+#cont:after {
+    content: ": Nguyễn Phước Thịnh"
+}
+#cou-in {
+    counter-reset: stt;
+}
+#cou-in div:before {
+    counter-increment: stt;
+    content: counter(stt) ". ";
+}
+#cu-au {
+    cursor: auto;
+}
+#cu-cro {
+    cursor: crosshair;
+}
+#cu-de {
+    cursor: default;
+}
+#cu-ere {
+    cursor: e-resize;
+}
+#cu-hel {
+    cursor: help;
+}
+#cu-mov {
+    cursor: move;
+}
+#cu-nre {
+    cursor: n-resize;
+}
+#cu-ner {
+    cursor: ne-resize;
+}
+#cu-non {
+    cursor: none;
+}
+#cu-nwr {
+    cursor: nw-resize;
+}
+#cu-poi {
+    cursor: pointer;
+}
+#cu-pro {
+    cursor: progress;
+}
+#cu-sre {
+    cursor: s-resize;
+}
+#cu-ser {
+    cursor: se-resize;
+}
+#cu-swr {
+    cursor: sw-resize;
+}
+#cu-tex {
+    cursor: text;
+}
+#cu-wre {
+    cursor: w-resize;
+}
+#cu-wai {
+    cursor: wait;
+}
+
+#dir-ltr {
+    direction: ltr;
+}
+
+#dir-rtl {
+    direction: rtl;
+}
+
+#dis-blo {
+    background: red;
+    display: block;
+}
+
+#dis-in {
+    background: red;
+    display: inline;
+}
+
+#dis-inb {
+    background: red;
+    display: inline-block;
+}
+
+#dis-lit {
+    background: red;
+    display: list-item;
+}
+
+#dis-no {
+    background: red;
+    display: none;
+}
+
+#emp-cel {
+    empty-cells: hide;
+}
+
+.flo-lef {
+    float: left;
+}
+
+#fon-fa {
+    font-family: Calibri;
+}
+
+#fon-siz {
+    font-size: 125%;
+}
+
+#fon-sty {
+    font-style: oblique;
+}
+
+#fon-var {
+    font-variant: small-caps;
+}
+
+#fon-wei {
+    font-weight: bold;
+}
+
+#hei {
+    background: yellow;
+    height: 50px;
+    width: 50%;
+}
+
+#lef {
+    border: 2px solid red;
+    height: 50px;
+    width: 50%;
+    position: relative;
+}
+
+#lef div {
+    position: absolute;
+    left: 30px;
+}
+
+#let-spa {
+    letter-spacing: 5px;
+}
+
+#lin-hei {
+    line-height: 2;
+}
+
+#lis-ima {
+    list-style-image: url(image/right-arrows.png);
+}
+
+#lis-out {
+    list-style-position: outside;
+}
+
+#lis-in {
+    list-style-position: inside;
+}
+
+#lis-arm {
+    list-style-type: armenian;
+}
+
+#lis-cir {
+    list-style-type: circle;
+}
+
+#lis-cjk {
+    list-style-type: cjk-ideographic;
+}
+
+#lis-dec {
+    list-style-type: decimal;
+}
+
+#lis-dlz {
+    list-style-type: decimal-leading-zero;
+}
+
+#lis-dis {
+    list-style-type: disc;
+}
+
+#lis-geo {
+    list-style-type: georgian;
+}
+
+#lis-heb {
+    list-style-type: hebrew;
+}
+
+#lis-hir {
+    list-style-type: hiragana;
+}
+
+#lis-hiro {
+    list-style-type: hiragana-iroha;
+}
+
+#lis-loa {
+    list-style-type: lower-alpha;
+}
+
+#lis-log {
+    list-style-type: lower-greek;
+}
+
+#lis-lol {
+    list-style-type: lower-latin;
+}
+
+#lis-lor {
+    list-style-type: lower-roman;
+}
+
+#lis-non {
+    list-style-type: none;
+}
+
+#lis-squ {
+    list-style-type: square;
+}
+
+#lis-upa {
+    list-style-type: upper-alpha;
+}
+
+#lis-upl {
+    list-style-type: upper-latin;
+}
+
+#lis-upr {
+    list-style-type: upper-roman;
+}
+
+#mar {
+    border: 2px solid red;
+    width: 50%;
+}
+
+#mar p {
+    background: green;
+    margin: 0 10px;
+}
+
+#max-ul {
+    border: none;
+    height: 115px;
+}
+
+#max-hei {
+    border: 2px solid red;
+    max-height: 65px;
+    width: 50%;
+}
+
+#max-wid {
+    border: 2px solid red;
+    max-width: 120px;
+}
+
+#min-hei {
+    border: 2px solid red;
+    min-height: 150px;
+    width: 50%;
+}
+
+#min-wid {
+    border: 2px solid red;
+    min-width: 200px;
+}
+
+#out {
+    outline: 3px double red;
+}
+
+#over {
+    border: 2px solid red;
+    height: 100px;
+    width: 50%;
+    overflow: auto;
+}
+
+#pad {
+    border: 2px solid red;
+    width: 50%;
+    background: green;
+    padding: 20px 0 0 0;
+}
+
+#pag-aft {
+    page-break-after: always;
+}
+
+#pag-bef {
+    page-break-before: always;
+}
+
+#pag-ins {
+    page-break-inside: always;
+}
+
+#pos {
+    border: 2px solid red;
+    height: 50px;
+    width: 50%;
+    position: relative;
+}
+
+#pos span {
+    background: blue;
+    color: white;
+    width: 166px;
+    right: -20px;
+    top: 13px;
+    position: absolute;
+}
+
+#quo {
+    quotes: "<" ">";
+}
+
+#rig {
+    border: 2px solid red;
+    height: 50px;
+    width: 50%;
+    position: relative;
+}
+
+#rig span {
+    position: absolute;
+    right: 10px;
+}
+
+#tab-lay {
+    table-layout: fixed;
+}
+
+#tex-ali {
+    text-align: justify;
+    width: 300px;
+}
+
+#tede-non {
+    text-decoration: none;
+}
+
+#tede-und {
+    text-decoration: underline;
+}
+
+#tede-ove {
+    text-decoration: overline;
+}
+
+#tede-bli {
+    text-decoration: blink;
+}
+
+#tede-lit {
+    text-decoration: line-through;
+}
+
+#tex-ind {
+    text-indent: 30px;
+}
+
+#tetr-cap {
+    text-transform: capitalize;
+}
+
+#tetr-upp {
+    text-transform: uppercase;
+}
+
+#tetr-low {
+    text-transform: lowercase;
+}
+
+#top {
+    border: 2px solid red;
+    height: 50px;
+    width: 50%;
+    position: relative;
+}
+
+#top span {
+    position: absolute;
+    top: 13px;
+}
+
+#vea-sub {
+    background: yellow;
+    vertical-align: sub;
+}
+
+#vea-supr {
+    background: yellow;
+    vertical-align: super;
+}
+
+#vea-top {
+    background: yellow;
+    vertical-align: top;
+}
+
+#vea-ttop {
+    background: yellow;
+    vertical-align: text-top;
+}
+
+#vea-mid {
+    background: yellow;
+    vertical-align: middle;
+}
+
+#vea-bot {
+    background: yellow;
+    vertical-align: bottom;
+}
+
+#vea-tbot {
+    background: yellow;
+    vertical-align: text-bottom;
+}
+
+#vea-pos {
+    background: yellow;
+    vertical-align: 5px;
+}
+
+#vea-neg {
+    background: yellow;
+    vertical-align: -5px;
+}
+
+#vis {
+    visibility: hidden;
+}
+
+#whi-spa span {
+    white-space: nowrap;
+}
+
+#whi-spa {
+    width: 50%;
+}
+
+#wid {
+    background: red;
+    width: 200px;
+}
+
+#wor-spa {
+    word-spacing: 20px;
+}
+
+#zin-bor {
+    height: 75px;
+    position: relative;
+}
+
+#zin-el1 {
+    background: red;
+    height: 50px;
+    width: 200px;
+    position: absolute;
+}
+
+#zin-el2 {
+    background: blue;
+    height: 50px;
+    width: 200px;
+    left: 25px;
+    top: 25px;
+    position: absolute;
+    z-index: 1;
+}
+
+.non-a:hover {
+    background: none;
+}

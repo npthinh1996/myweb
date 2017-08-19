@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+    <title>Build Website PT.9E | Cấu trúc &amp; Các lệnh trong HTML5</title>
+  	<meta name="keywords" content="HTML,CSS,XHTML,JavaScript" />
+    <meta name="author" content="PT.9E" />
+    <link href="image/home-icon.png" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+    <h1 align="center">Cấu trúc &amp; Các lệnh trong HTML5</h1>
+    <hr />
+    <a href="index.html" target="_blank">HTML</a>
+    <a href="text_css.html" target="_blank">CSS</a>
+    <hr />
+    <h2 align="left">Các lệnh cơ bản:</h2>
+    <ul>
+        <li><code>&lt;<b>article</b>&gt;Nội dung&lt;/<b>article</b>&gt;</code>:&emsp;<i>Định nghĩa một bài viết, một nội dung riêng biệt</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <article>
+                <div>Tin trong ngày:</div>
+                <div>Công nghệ ngày càng tiến sâu vào đời sống của chúng ta...</div>
+            </article>
+        </ul>
+        <li><code>&lt;<b>aside</b>&gt;Nội dung&lt;/<b>aside</b>&gt;</code>:&emsp;<i>Định nghĩa nội dung bên ngoài nội dung chính (thường là phần sidebar)</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <aside>
+                <h3>Tiêu đề cho <code>&lt;<b>aside</b>&gt;</code></h3>
+                <div>Nội dung cho <code>&lt;<b>aside</b>&gt;</code></div>
+            </aside>
+        </ul>
+        <li><code>&lt;<b>audio</b> src="Đường dẫn" controls="controls"&gt;Dòng thông báo&lt;/<b>audio</b>&gt;</code>:&emsp;<i>Định nghĩa âm thanh, như nhạc hay trường audio khác</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <audio src="audio/We Don't Talk Anymore - Charlie Puth ft. Selena Gomez.mp3" controls="controls">Trình duyệt bạn sử dụng không hỗ trợ tag <code>&lt;<b>audio</b>&gt;</code></audio>
+        </ul>
+        <li><code>&lt;<b>canvas</b>&gt;Nội dung&lt;/<b>canvas</b>&gt;</code>:&emsp;<i>Được dùng để hiển thị đồ họa</i></li>
+        <ul><li>Dòng text nằm giữa <code>&lt;<b>canvas</b>&gt;</code> và <code>&lt;/<b>canvas</b>&gt;</code> sẽ hiển thị khi trình duyệt không hỗ trợ tag <code>&lt;<b>canvas</b>&gt;</code></li></ul>
+        <li><code>&lt;<b>command</b>&gt;Nội dung&lt;/<b>command</b>&gt;</code>:&emsp;<i>Định nghĩa một nút lệnh, giống như một Radiobutton, hộp kiểm, hoặc một button</i></li>
+        <li><code>&lt;<b>datalist</b>&gt;Nội dung&lt;/<b>datalist</b>&gt;</code>:&emsp;<i>Định nghĩa một danh sách tùy chọn, sử dụng thành phần này cũng với các thành phần input</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <input list="listdata" />
+            <datalist id="listdata">
+                <option value="Học HTML"></option>
+                <option value="Tham khảo HTML"></option>
+                <option value="Ví dụ HTML"></option>
+                <option value="Thực hành HTML"></option>
+            </datalist>
+        </ul>
+        <li><code>&lt;<b>details</b>&gt;Nội dung&lt;/<b>details</b>&gt;</code>:&emsp;<i>Xác định thêm chi tiết hoặc điều khiển có thể được ẩn hoặc hiển thị theo yêu cầu</i></li>
+        <ul>
+            <li>Nội dung của tag <code>&lt;<b>details</b>&gt;</code> không được hiển thị, trừ khi thuộc tính <code><b>open</b></code> được thiết lập</li>
+            <li>Tag <code>&lt;<b>details</b>&gt;</code> thường được dùng kèm với tag <code>&lt;<b>summary</b>&gt;</code> để làm tiêu đề cho <code>&lt;<b>details</b>&gt;</code></li>
+        </ul>
+        <b><u>Cấu trúc:</u></b>
+        <ul>
+            <code>
+                &lt;<b>details</b>&gt;<br>
+                <dd>&lt;<b>summary</b>&gt;Tiêu đề&lt;/<b>summary</b>&gt;</dd>
+                &lt;/<b>details</b>&gt;
+            </code>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <details>
+                <summary>Học HTML</summary>
+                <dd><div>Học từ cơ bản đến nâng cao.</div></dd>
+                <dd><div>Tham khảo những phần liên quan.</div></dd>
+            </details>
+        </ul>
+        <li><code>&lt;<b>embed</b>&gt;Nội dung&lt;/<b>embed</b>&gt;</code>:&emsp;<i>Xác định nội dung nhúng như một plugin</i></li>
+        <ul><li>Tag <code>&lt;<b>embed</b>&gt;</code> thường dùng để chèn flash</li></ul>
+        <li><code>&lt;<b>figcaption</b>&gt;Nội dung&lt;/<b>figcaption</b>&gt;</code>:&emsp;<i>Xác định một chú thích cho tag <code>&lt;<b>figure</b>&gt;</code></i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <figure>
+                <figcaption>Home icon</figcaption>
+                <img src="image/home-icon.png" title="Home icon" alt="Home icon" width="100px" />
+            </figure>
+        </ul>
+        <li><code>&lt;<b>figure</b>&gt;Nội dung&lt;/<b>figure</b>&gt;</code>:&emsp;<i>Xác định các nội dung liên quan mạch lạc với nhau, như hình ảnh, sơ đồ, code,...</i></li>
+        <ul><li>Tag <code>&lt;<b>figure</b>&gt;</code> thường dùng kèm với <code>&lt;<b>figcaption</b>&gt;</code> để chỉ một chú thích</li></ul>
+        <li><code>&lt;<b>footer</b>&gt;Nội dung&lt;/<b>footer</b>&gt;</code>:&emsp;<i>Định nghĩa khu vực footer (phần cuối) của trang</i></li>
+        <ul><li>Thường chứa các thông tin liên lạc của tác giả, nguồn gốc của bài viết</li></ul>
+        <li><code>&lt;<b>header</b>&gt;Nội dung&lt;/<b>header</b>&gt;</code>:&emsp;<i>Định nghĩa khu vực header (phần đầu) của trang</i></li>
+        <ul><li>Thường được dùng cho phần giới thiệu hay chứa các thành phần chuyển hướng (navigation)</li></ul>
+        <li><code>&lt;<b>hgroup</b>&gt;Nội dung&lt;/<b>hgroup</b>&gt;</code>:&emsp;<i>Định nghĩa một nhóm các tiêu đề</i></li>
+        <ul><li>Tag <code>&lt;<b>hgroup</b>&gt;</code> chứa các thành phần tag từ <code>&lt;<b>h1</b>&gt;</code> đến <code>&lt;<b>h6</b>&gt;</code></li></ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <hgroup>
+                <h5>HTML5</h5>
+                <h6>Tag HTML5</h6>
+            </hgroup>
+        </ul>
+        <li><code>&lt;<b>keygen</b> name="Tên keygen" /&gt;</code>:&emsp;<i>Xác định một cặp trường khóa chính sử dụng form</i></li>
+        <ul><li>Khi <code>&lt;<b>form</b>&gt;</code> được submit các khóa riêng (private key) được lưu trữ tại địa phương, và các khóa chung được gửi (public key) đến máy chủ</li></ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <form action="#" method="get">
+                <input type="text" name="searchKey" />
+                <keygen name="keygenName" />
+                <input type="submit" />
+            </form>
+        </ul>
+        <li><code>&lt;<b>mark</b>&gt;Nội dung&lt;/<b>mark</b>&gt;</code>:&emsp;<i>Xác định văn bản được đánh dấu, sử dụng khi muốn làm nổi bật văn bản của mình</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <div>Học <mark>HTML</mark> thật là dễ!</div>
+        </ul>
+        <li><code>&lt;<b>meter</b> value="Giá trị"&gt;Nội dung&lt;/<b>meter</b>&gt;</code>:&emsp;<i>Định nghĩa một phép đo, sử dụng chỉ cho phép đo với giá trị tối thiểu và tối đa</i></li>
+        <ul>
+            <li>Tag <code>&lt;<b>meter</b>&gt;</code> không nên được sử dụng như thanh trạng thái, nếu là thanh trạng thái thì sử dụng tag <code>&lt;<b>progress</b>&gt;</code> thay thế</li>
+        </ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <meter value="0.5">50%</meter>
+        </ul>
+        <li><code>&lt;<b>nav</b>&gt;Nội dung&lt;/<b>nav</b>&gt;</code>:&emsp;<i>Định nghĩa link danh mục (navigation)</i></li>
+        <ul><li>Tag <code>&lt;<b>nav</b>&gt;</code> thường sử dụng cho global menu, local link, topic path, pager link,...</li></ul>
+        <li><code>&lt;<b>output</b> Thuộc tính="Giá trị"&gt;Nội dung&lt;/<b>output</b>&gt;</code>:&emsp;Đại diện cho kết quả của phép tính (giống như được thực hiện bởi script)</li>
+        <ul><li>Tag <code>&lt;<b>output</b>&gt;</code> sử dụng kèm với tag <code>&lt;<b>input</b> /&gt;</code> để nhập giá trị</li></ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <form onsubmit="return false" oninput="result.value=num01.valueAsNumber+num02.valueAsNumber" lpformnum="1">
+                <input name="num01" type="number" /> + <input name="num02" type="number" /> = <output name="result"></output>
+            </form>
+        </ul>
+        <li><code>&lt;<b>progress</b> value="Giá trị"&gt;Nội dung&lt;/<b>progress</b>&gt;</code>:&emsp;<i>Mô tả tiến trình làm việc</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            Quá trình download được: <progress value="0.75"></progress>
+        </ul>
+        <li><code>&lt;<b>rp</b>&gt;Nội dung&lt;/<b>rp</b>&gt;</code>:&emsp;<i>Hiển thị những nội dung bên trong khi trình duyệt không hỗ trợ ruby</i></li>
+        <ul><li>Tag <code>&lt;<b>rp</b>&gt;</code> được dùng kèm với <code>&lt;<b>ruby</b>&gt;</code> và <code>&lt;<b>rt</b>&gt;</code></li></ul>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <ruby>
+                字<rp>(</rp><rt>じ</rt><rp>)</rp>
+            </ruby>
+        </ul>
+        <li><code>&lt;<b>rt</b>&gt;Nội dung&lt;/<b>rt</b>&gt;</code>:&emsp;<i>Định nghĩa một lời giải thích hoặc cách phát âm của các ký tự (đối với kiểu chữ Đông Á)</i></li>
+        <li><code>&lt;<b>ruby</b>&gt;Nội dung&lt;/<b>ruby</b>&gt;</code>:&emsp;<i>Định nghĩa một chú thích ruby (đối với kiểu chữ Đông Á). Chú thích ruby được sử dụng trong khu vực Đông Á, hiển thị cách phát âm của các ký tự Đông Á</i></li>
+        <li><code>&lt;<b>section</b>&gt;Nội dung&lt;/<b>section</b>&gt;</code>:&emsp;<i>Định nghĩa một khu vực (vùng bao)</i></li>
+        <li><code>&lt;<b>source</b> Thuộc tính="Giá trị" /&gt;</code>:&emsp;<i>Xác định nguồn cho một media</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <audio controls="controls"><source src="audio/We Don't Talk Anymore - Charlie Puth ft. Selena Gomez.mp3" type="audio/mp3" />Trình duyệt của bạn không hỗ trợ thành phần audio</audio>
+        </ul>
+        <li><code>&lt;<b>summary</b>&gt;Nội dung&lt;/<b>summary</b>&gt;</code>:&emsp;<i>Xác định một tiêu đề cho các thành phần details, được sử dụng để mô tả chi tiết về tài liệu, hoặc các bộ phận của tài liệu</i></li>
+        <li><code>&lt;<b>time</b>&gt;Nội dung&lt;/<b>time</b>&gt;</code>:&emsp;<i>Xác định thời gian, ngày tháng, hoặc năm sinh</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            Thời gian làm việc từ <time>08:00</time> sáng các ngày trong tuần
+        </ul>
+        <li><code>&lt;<b>video</b> src="Đường dẫn" controls="controls"&gt;Dòng thông báo&lt;/<b>video</b>&gt;</code>:&emsp;<i>Xác định một video, chẳng hạn như một đoạn phim hoặc một trường video</i></li>
+        <b><u>Ví dụ:</u></b>
+        <ul>
+            <video src="video/year-in-review-2016.mp4" controls="controls" width="200px">Trình duyệt của bạn không hỗ trợ thẻ <code>&lt;<b>video</b>&gt;</code></video>
+        </ul>
+        <li><code>&lt;<b>wbr</b>&gt;Nội dung&lt;/<b>wbr</b>&gt;</code>:&emsp;<i>Xác định text quá dài sẽ tự động xuống hàng (không tràn layout)</i></li>
+    </ul>    
+    <p align="right"><a href="#">Về đầu trang</a></p>
+</body>
